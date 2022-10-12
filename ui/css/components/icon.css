@@ -127,3 +127,27 @@
     border: none;
     margin: 0;
 }
+
+/*--- table ---*/
+.mi-icon-16 {
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    min-height: 16px;
+    padding: 2px;
+}
+
+.mi-table-icon-dropdown {
+    background-position: -896px -359px;
+}
+
+/*--- footer --- */
+.mi-footer-icon-dropdown {
+    background-position: -551px -349px;
+    position: relative;
+    right: 36px;
+    border-left: 1px solid #CEEAD9;
+    top: 1px;
+    width: 36px;
+    height: 34.15px;
+}

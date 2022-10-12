@@ -9,11 +9,14 @@
 .input::placeholder {
 	color: #999999;
 	font-size: 14px;
+	font-style: italic;
+
 }
 
 .input:focus-visible {
 	outline: none;
 	border: 1px solid #089740;
-	cursor: pointer;
+	cursor: text;
 	border-radius: 4px;
 }
+

@@ -32,7 +32,7 @@ table tbody tr {
 table tbody tr td,
 th {
     padding-left: 12px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     border-bottom: 1px solid #c7c7c7;
     border-right: 1px solid #c7c7c7;
 }
@@ -85,4 +85,24 @@ tbody .table-anchor-right {
 
 .justify-left {
     text-align: left;
+}
+
+
+.table__combobox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.table__combobox__title {
+    width: 36px;
+    height: 22px;
+    color: #0075c0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.table__combobox__dropdown {
+    padding: 8px 10px;
 }
