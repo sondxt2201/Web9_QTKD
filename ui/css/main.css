@@ -1,0 +1,76 @@
+@import url("../css/components/icon.css");
+@import url("../css/components/button.css");
+@import url("../css/components/input.css");
+@import url("../css/components/dialog.css");
+@import url("../css/components/combobox.css");
+@import url("../css/components/toastmessage.css");
+@import url("../css/components/table.css");
+@import url("../css/components/grid.css");
+@import url("../css/layout/header.css");
+@import url("../css/layout/container.css");
+@import url("../css/layout/sidebar.css");
+@import url("../css/layout/content.css");
+@import url("../css/layout/formEmployee.css");
+
+@font-face {
+    font-family: notosans;
+    src: url(../assets/fonts/notosans-regular.2cb88a13.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b8bcc3;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+html {
+    font-size: 13px;
+    line-height: 1.6rem;
+    font-family: notosans;
+    box-sizing: border-box;
+    font-weight: 400;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: notosans;
+    font-size: 13px;
+    margin: 0;
+    min-width: 1024px;
+    /* background: #f4f5f8; */
+    color: #111111;
+}
+
+@media screen and (min-width: 2477px) {
+    .main-page__footer {
+        position: absolute;
+        bottom: 0px;
+        width: calc(100% - 18px);
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px;
+        background-color: #fff;
+        z-index: 2;
+    }
+    
+    .table-anchor-right {
+        border-left: none;
+    }
+}

@@ -1,0 +1,105 @@
+.header {
+    grid-column: 1/3;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    /* padding-right: 24px; */
+    /* position: absolute; */
+}
+
+/*----- header left -----*/
+.header__left {
+    display: flex;
+    width: 200px;
+    background-color: #38393d;
+    align-items: center;
+    padding: 10px 0 10px 0;
+}
+
+.header__left-option {
+    background-position: -424px -88px;
+    margin-right: 12px;
+    margin: 0 16px 0 16px;
+}
+
+.header__left-logo {
+    height: 32px;
+    width: 96px;
+    background-image: url("/assets/img/Logo_Module_TiengViet_White.66947422.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+
+}
+
+
+/*----- header right -----*/
+.header__right {
+    width: calc(100% - 200px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px 16px 10px 16px;
+}
+
+.header__right-bars {
+    background-position: -843px -30px;
+    cursor: pointer;
+    margin: 0 12px 0 0;
+}
+
+.header__right-company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header__right-brand {
+    padding: 0 2px;
+    text-transform: uppercase;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.header__right-drop-down {
+    background-position: -1124px -357px;
+    margin: 0 0 0 2px;
+    cursor: pointer;
+}
+
+.header__right-user {
+    display: flex;
+    align-items: center;
+    /* padding-right: 24px; */
+    text-transform: uppercase;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.user__dropdown {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.user__avatar {
+    background-position: -350px -891px;
+    border-radius: 50%;
+    background-color: #e2e2e2;
+    margin: 0 12px;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    justify-content: space-between;
+}
+
+.user__name {
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}

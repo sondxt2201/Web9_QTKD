@@ -1,0 +1,129 @@
+.mi-icon {
+    background: url('/assets/img/Sprites.64af8f61.svg') no-repeat;
+    cursor: pointer;
+}
+
+.mi-icon-24 {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    min-height: 24px;
+    padding: 2px;
+    margin-right: 10px;
+}
+
+/*----- header icon -----*/
+.mi-header-icon-bell {
+    background-position: -787px -30px;
+    cursor: pointer;
+    margin: 0 12px 0 0;
+}
+
+.mi-user-icon-drop-down {
+    background-position: -1797px -473px;
+    margin-left: 2px;
+    cursor: pointer;
+    padding: 2px;
+    width: 14px;
+    height: 14px;
+}
+
+
+
+/*----- sidebar icon -----*/
+.mi-sidebar-icon-dashboard {
+    background-position: -30px -1628px;
+}
+
+.mi-sidebar-icon-cash {
+    background-position: -73px -1628px;
+}
+
+.item-selected-icon {
+    background-position: -73px -1585px;
+    width: 24px;
+    height: 24px;
+}
+
+.mi-sidebar-icon-cash:hover::before {
+    background-color: #fff;
+}
+
+.mi-sidebar-icon-bank {
+    background-position: -117px -1628px;
+}
+
+.mi-sidebar-icon-pu {
+    background-position: -161px -1628px;
+}
+
+.mi-sidebar-icon-sale {
+    background-position: -204px -1628px;
+}
+
+.mi-sidebar-icon-invoice {
+    background-position: -249px -1628px;
+}
+
+.mi-sidebar-icon-stock {
+    background-position: -291px -1628px;
+}
+
+.mi-sidebar-icon-tools {
+    background-position: -336px -1628px;
+}
+
+.mi-sidebar-icon-fixed-assets {
+    background-position: -378px -1630px;
+}
+
+.mi-sidebar-icon-tax {
+    background-position: -423px -1630px;
+}
+
+.mi-sidebar-icon-price {
+    background-position: -467px -1628px;
+}
+
+.mi-sidebar-icon-general {
+    background-position: -510px -1628px;
+}
+
+.mi-sidebar-icon-budget {
+    background-position: -378px -1659px;
+}
+
+.mi-sidebar-icon-report {
+    background-position: -547px -1628px;
+}
+
+.mi-sidebar-icon-finance {
+    background-position: -204px -1664px;
+}
+
+
+
+/*----- main page icon -----*/
+
+/*--- toolbar ---*/
+.mi-icon-20 {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+    padding: 2px;
+}
+
+.mi-toolbar-icon-search {
+    background-position: -31px -1663px;
+    position: relative;
+    right: 28px;
+    border: none;
+    margin-right: 4px;
+}
+
+.mi-toolbar-icon-refresh {
+    background-position: -1097px -89px;
+    border: none;
+    margin: 0;
+}

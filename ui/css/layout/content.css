@@ -1,0 +1,121 @@
+.main-page__container {
+    background-color: #eceef1;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    padding: 24px 16px 0 24px;
+}
+
+
+/*----- main-page__header -----*/
+.main-page__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding-bottom: 16px;
+}
+
+.main-page__header-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/*----- main-page__content -----*/
+.main-page__content {
+    background-color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/*----- main-page__content__toolbar -----*/
+.content__toolbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 16px;
+}
+
+.content__toolbar-search:hover {
+    outline: none;
+    border: 1px solid #39AC66;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+/*----- main-page__footer -----*/
+.main-page__footer {
+    position: absolute;
+    bottom: 10px;
+    width: calc(100% - 18px);
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: #fff;
+    z-index: 2;
+    /* display: none; */
+}
+
+/*----- footer__paging -----*/
+.main-page__footer .footer__paging {
+    display: flex;
+    align-items: center;
+}
+
+.footer__paging .paging__navigation {
+    display: flex;
+    padding: 0 16px;
+    align-items: center;
+}
+
+.paging__navigation .paging__navigation-main {
+    display: flex;
+}
+
+.paging__navigation .paging__navigation-button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: unset;
+}
+
+.paging__navigation button[disabled] {
+    cursor: default;
+}
+
+.pre-page {
+    margin-right: 12px;
+}
+
+.next-page {
+    margin-left: 12px;
+}
+
+.paging__navigation .paging__navigation-main .page-number {
+    height: 20px;
+    width: 20px;
+    margin: 0 4px;
+    padding: 0;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: unset;
+    border-radius: 2px;
+}
+
+.page__number:focus {
+    border: 1px solid #c7c7c7;
+    font-weight: 700;
+    color: #000;
+}
+
+.current-page {
+    border: 1px solid #c7c7c7 !important;
+    font-weight: 700;
+    color: #000;
+}

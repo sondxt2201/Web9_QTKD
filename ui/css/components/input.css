@@ -1,0 +1,19 @@
+.input {
+	min-width: 250px;
+	height: 36px;
+	padding: 0px 8px 0 12px;
+	border-radius: 4px;
+	border: 1px solid #CEEAD9;
+}
+
+.input::placeholder {
+	color: #999999;
+	font-size: 14px;
+}
+
+.input:focus-visible {
+	outline: none;
+	border: 1px solid #089740;
+	cursor: pointer;
+	border-radius: 4px;
+}

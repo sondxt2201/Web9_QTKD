@@ -1,0 +1,2184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="grid-container">
+
+
+        <!-- Header -->
+        <div class="header">
+            <div class="header__left">
+                <a href="" class="header__left-option mi-icon mi-icon-24"></a>
+                <a href="" class="header__left-logo"></a>
+            </div>
+            <div class="header__right">
+                <div class="header__right-company">
+                    <a href="" class="header__right-icon mi-icon mi-icon-24 header__right-bars"></a>
+                    <div class="header__right-brand">
+                        CÔNG TY TNHH SẢN XUẤT - THƯƠNG MẠI - DỊCH VỤ QUI PHÚC
+                    </div>
+                    <a href="" class="header__right-icon mi-icon mi-icon-24 header__right-drop-down"></a>
+                </div>
+                <div class="header__right-user">
+                    <div class="mi-icon mi-icon-24 mi-header-icon-bell"></div>
+                    <div class="user__dropdown">
+                        <div class="user__avatar mi-icon"></div>
+                        <div class="user__name">Đầu Xuân Thái Sơn</div>
+                        <a href="" class="header__right-icon mi-icon mi-user-icon-drop-down"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+
+
+        <!-- SideBar -->
+        <div class="sidebar">
+            <div class="sidebar-item-list">
+                <div class="sidebar-item">
+                    <div class="sidebar-item__icon mi-icon mi-icon-24 mi-sidebar-icon-dashboard"></div>
+                    <div class="sidebar-item__title">Tổng quan</div>
+                </div>
+
+                <div class="sidebar-item item-pseudo item-active">
+                    <div class="sidebar-item__icon mi-icon mi-icon-24 mi-sidebar-icon-cash item-selected-icon"></div>
+                    <div class="sidebar-item__title">Tiền mặt</div>
+                </div>
+
+                <div class="sidebar-item">
+                    <div class="sidebar-item__icon mi-icon mi-icon-24 mi-sidebar-icon-bank"></div>
+                    <div class="sidebar-item__title">Tiền gửi</div>
+                </div>
+
+                <div class="sidebar-item">
+                    <div class="sidebar-item__icon mi-icon mi-icon-24 mi-sidebar-icon-pu"></div>
+                    <div class="sidebar-item__title">Mua hàng</div>
+                </div>
+
+                <div class="sidebar-item">
+                    <div class="sidebar-item__icon mi-icon mi-icon-24 mi-sidebar-icon-sale"></div>
+                    <div class="sidebar-item__title">Bán hàng</div>
+                </div>
+
+                <div class="sidebar-item">
+                    <div class="sidebar-item__icon mi-icon mi-icon-24 mi-sidebar-icon-invoice"></div>
+                    <div class="sidebar-item__title">Quản lý hoá đơn</div>
+                </div>
+
+                <div class="sidebar-item">
+                    <div class="sidebar-item__icon mi-icon mi-icon-24 mi-sidebar-icon-stock"></div>
+                    <div class="sidebar-item__title">Kho</div>
+                </div>
+
+                <div class="sidebar-item">
+                    <div class="sidebar-item__icon mi-icon mi-icon-24 mi-sidebar-icon-tools"></div>
+                    <div class="sidebar-item__title">Công cụ dụng cụ</div>
+                </div>
+
+                <div class="sidebar-item">
+                    <div class="sidebar-item__icon mi-icon mi-icon-24 mi-sidebar-icon-fixed-assets"></div>
+                    <div class="sidebar-item__title">Tài sản cố định</div>
+                </div>
+
+                <div class="sidebar-item">
+                    <div class="sidebar-item__icon mi-icon mi-icon-24 mi-sidebar-icon-tax"></div>
+                    <div class="sidebar-item__title">Thuế</div>
+                </div>
+
+                <div class="sidebar-item">
+                    <div class="sidebar-item__icon mi-icon mi-icon-24 mi-sidebar-icon-price"></div>
+                    <div class="sidebar-item__title">Giá thành</div>
+                </div>
+
+                <div class="sidebar-item">
+                    <div class="sidebar-item__icon mi-icon mi-icon-24 mi-sidebar-icon-general"></div>
+                    <div class="sidebar-item__title">Tổng hợp</div>
+                </div>
+
+                <div class="sidebar-item">
+                    <div class="sidebar-item__icon mi-icon mi-icon-24 mi-sidebar-icon-budget"></div>
+                    <div class="sidebar-item__title">Ngân sách</div>
+                </div>
+
+                <div class="sidebar-item">
+                    <div class="sidebar-item__icon mi-icon mi-icon-24 mi-sidebar-icon-report"></div>
+                    <div class="sidebar-item__title">Báo cáo</div>
+                </div>
+
+                <div class="sidebar-item">
+                    <div class="sidebar-item__icon mi-icon mi-icon-24 mi-sidebar-icon-finance"></div>
+                    <div class="sidebar-item__title">Phân tích tài chính</div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+
+
+        <!-- Main page -->
+        <div class="main-page__container">
+
+            <!--  -->
+            <!--  -->
+            <div class="main-page__header">
+                <div class="main-page__header-title">Nhân viên</div>
+                <button id="btnAdd" class="main-page__header-button button button-add">Thêm mới nhân viên</button>
+            </div>
+
+            <!--  -->
+            <!--  -->
+            <div class="main-page__content">
+
+                <!-- toolbar -->
+                <div class="content__toolbar">
+                    <input type="text" class="toolbar-input input" placeholder="Tìm theo mã, tên nhân viên" />
+                    <button class="mi-icon mi-icon-20 mi-toolbar-icon-search"></button>
+                    <button id="btnReload" class="mi-icon mi-icon-24 mi-toolbar-icon-refresh"></button>
+                </div>
+                <!--  -->
+
+                <!-- table -->
+                <div class="content__table">
+                    <table id="employeeList" class="table">
+
+                        <!-- table head -->
+                        <thead>
+                            <tr>
+                                <th class="justify-center no_padding table-anchor-left" prop-name="checkbox" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </th>
+                                <th class="text__align--left" prop-name="employeeCode"
+                                    style="min-width: 150px; width: 150px">Mã nhân viên</th>
+                                <th class="text__align--left" prop-name="fullName" style="min-width: 250px;">Tên nhân
+                                    viên</th>
+                                <th class="text__align--left" prop-name="gender" style="min-width: 120px;">Giới tính
+                                </th>
+                                <th class="text__align--center no_padding" prop-name="dateOfBirth" format-date
+                                    style="min-width: 150px; width: 150px">Ngày sinh</th>
+                                <th class="text__align--left" prop-name="idNumber"
+                                    style="min-width: 200px; width: 200px">Số
+                                    CMND</th>
+                                <th class="text__align--left" prop-name="position"
+                                    style="min-width: 250px; width: 250px">
+                                    Chức danh</th>
+                                <th class="text__align--left" prop-name="department" style="min-width: 250px;">Tên đơn
+                                    vị
+                                </th>
+                                <th class="text__align--left" prop-name="bankNumber"
+                                    style="min-width: 150px; width: 150px">
+                                    Số tài khoản</th>
+                                <th class="text__align--left" prop-name="bankName"
+                                    style="min-width: 250px; width: 250px">Tên
+                                    ngân hàng</th>
+                                <th class="text__align--left" prop-name="status" style="min-width: 250px; width: 250px">
+                                    Chi nhánh TK ngân hàng</th>
+                                <th class="text__align--center no_padding table-anchor-right" prop-name="function"
+                                    style="min-width: 120px;">Chức năng
+                                </th>
+                            </tr>
+                        </thead>
+                        <!--  -->
+
+                        <!-- table body -->
+                        <tbody>
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text__align--left" style="min-width: 150px;">001200</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nguyễn Văn Vũ</td>
+                                <td class="text__align--left" style="min-width: 120px;">Nam</td>
+                                <td class="text__align--center no_padding" style="min-width: 150px;">01/01/1990</td>
+                                <td class="text__align--left" style="min-width: 200px;">001200066666</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhân viên</td>
+                                <td class="text__align--left" style="min-width: 250px;">Nhóm kiểm hàng</td>
+                                <td class="text__align--left" style="min-width: 150px;">Số tài khoản</td>
+                                <td class="text__align--left" style="min-width: 250px;">Tên ngân hàng</td>
+                                <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
+                                <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
+                                    <div class="table__combobox">
+                                        Sửa
+                                        <div class="combobox">
+                                            <button>
+                                                <div class="mi-table-icon-dropdown"></div>
+                                            </button>
+                                            <!-- LÀM SAU -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                           
+
+
+                        </tbody>
+                        <!--  -->
+
+                    </table>
+                </div>
+                <!--  -->
+
+
+                <!-- footer -->
+                <div class="main-page__footer">
+                    <div class="footer__total-record">Tổng số:<b> 1000</b> bản ghi</div>
+                    <div class="footer__paging">
+                        <div class="paging__combobox combobox">
+                            <input type="text" class="input">
+                            <button>
+                                <div class="mi-footer-icon-dropdown"></div>
+                            </button>
+                            <!-- LÀM SAU -->
+                        </div>
+                        <div class="paging__navigation">
+                            <button class="paging__navigation-button pre-page" disabled>Trước</button>
+                            <div class="paging__navigation-main">
+                                <button class="page-number current-page ">1</button>
+                                <button class="page-number ">2</button>
+                                <button class="page-number skip-page">...</button>
+                                <button class="page-number ">4</button>
+                                <button class="page-number ">5</button>
+                            </div>
+                            <button class="paging__navigation-button next-page">Sau</button>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+
+
+                <!-- main-page__content -->
+            </div>
+
+            <!-- main-page__container -->
+        </div>
+        <!--  -->
+
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+.button {
+    min-width: 80px;
+    min-height: 36px;
+    border-radius: 4px;
+    background: #409330;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    padding: 0 16px 0 16px;
+    border: none;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #73C663;
+    cursor: pointer;
+}
+
+.main-page__header-button {
+    color: #fff;
+}
