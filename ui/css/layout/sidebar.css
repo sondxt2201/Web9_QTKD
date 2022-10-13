@@ -52,3 +52,7 @@
     font-weight: 700;
     margin-left: 6px;
 }
+
+.scroller::-webkit-scrollbar {
+    width: 6px;
+}

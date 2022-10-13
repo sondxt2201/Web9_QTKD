@@ -32,14 +32,16 @@ table tbody tr {
 table tbody tr td,
 th {
     padding-left: 12px;
-    /* text-transform: uppercase; */
     border-bottom: 1px solid #c7c7c7;
     border-right: 1px solid #c7c7c7;
 }
 
+
+/* anchor column */
 .table-anchor-left {
     left: 0;
     position: sticky;
+    z-index: 1;
 }
 
 .table-anchor-right {
@@ -47,24 +49,28 @@ th {
     position: sticky;
     border-left: 1px solid #c7c7c7;
     border-right: none;
+    z-index: 1;
 }
 
-thead .table-anchor-left {
-    top: 0;
-    background-color: #e5e8ec;
-}
-
+thead .table-anchor-left,
 thead .table-anchor-right {
     top: 0;
     background-color: #e5e8ec;
 }
 
-tbody .table-anchor-left { 
-    background-color: #fff; 
-} 
+tbody .table-anchor-right,
+tbody .table-anchor-left {
+    background-color: #fff;
+    ;
+}
 
-tbody .table-anchor-right {
-    background-color: #fff; 
+tbody:hover {
+    background-color: #d1e5f6;
+}
+
+tbody:hover .table-anchor-left,
+tbody:hover .table-anchor-right {
+    background-color: #d1e5f6;
 }
 
 .no_padding {
@@ -92,7 +98,6 @@ tbody .table-anchor-right {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .table__combobox__title {
@@ -101,6 +106,7 @@ tbody .table-anchor-right {
     color: #0075c0;
     font-size: 14px;
     font-weight: 600;
+    text-decoration: none;
 }
 
 .table__combobox__dropdown {

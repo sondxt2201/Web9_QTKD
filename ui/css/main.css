@@ -17,6 +17,25 @@
     src: url(../assets/fonts/notosans-regular.2cb88a13.woff2);
 }
 
+@media screen and (min-width: 2477px) {
+    .main-page__footer {
+        position: absolute;
+        bottom: 0px;
+        width: calc(100% - 18px);
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px;
+        background-color: #fff;
+        z-index: 2;
+    }
+    
+    .table-anchor-right {
+        border-left: none;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -28,6 +47,9 @@
     height: 10px;
 }
 
+::-webkit-scrollbar-button {
+    display: none;
+}
 ::-webkit-scrollbar-thumb {
     background: #b8bcc3;
 }
@@ -56,21 +78,7 @@ body {
     color: #111111;
 }
 
-@media screen and (min-width: 2477px) {
-    .main-page__footer {
-        position: absolute;
-        bottom: 0px;
-        width: calc(100% - 18px);
-        height: 48px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 16px;
-        background-color: #fff;
-        z-index: 2;
-    }
-    
-    .table-anchor-right {
-        border-left: none;
-    }
+.main-app {
+    position: absolute;
 }
+
