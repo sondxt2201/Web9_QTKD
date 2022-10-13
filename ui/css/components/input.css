@@ -1,7 +1,7 @@
 .input {
 	min-width: 250px;
 	height: 36px;
-	padding: 0px 8px 0 12px;
+	padding: 0px 38px 0 12px;
 	border-radius: 4px;
 	border: 1px solid #CEEAD9;
 }
@@ -20,3 +20,24 @@
 	border-radius: 4px;
 }
 
+
+input[type='checkbox'] {
+	-webkit-appearance: none;
+	width: 24px;
+	height: 24px;
+	background: white;
+	border-radius: 4px;
+	border: 1px solid #CEEAD9;
+	cursor: pointer;
+}
+
+input[type='checkbox']:checked {
+	border: 1px solid #089740;
+	background: url('/assets/img/Sprites.64af8f61.svg') no-repeat -1221px -357px;
+	transition: all .1s ease;
+}
+
+input[type='checkbox']:not(:checked) {
+	transition: all .1s ease;
+	transform: rotate(-90deg);
+}

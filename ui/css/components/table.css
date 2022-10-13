@@ -31,7 +31,7 @@ table tbody tr {
 
 table tbody tr td,
 th {
-    padding-left: 12px;
+    padding-left: 16px;
     border-bottom: 1px solid #c7c7c7;
     border-right: 1px solid #c7c7c7;
 }

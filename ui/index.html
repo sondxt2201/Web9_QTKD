@@ -220,23 +220,17 @@
 
                 <!-- footer -->
                 <div class="content__footer">
-                    <div class="footer__left">Tổng số:<b> 10/1000</b> bản ghi</div>
+                    <div class="footer__left">Tổng:<b style="font-size: 16px"> 20</b></div>
                     <div class="footer__right footer__paging">
                         <div class="paging__combobox combobox">
-                            <input type="text" class="input">
-                            <div class="mi-icon mi-icon-16 mi-footer-icon-dropdown"></div>
-                            <!-- LÀM SAU -->
+                            <span class="paging__combobox__title">Số bản ghi/trang</span>
+                            <input type="text" class="paging__combobox__input ">
+                            <div class="mi-icon mi-icon-24 mi-footer-icon-dropdown"></div>
                         </div>
                         <div class="paging__navigation">
-                            <button class="paging__navigation-button pre-page" disabled>Trước</button>
-                            <div class="paging__navigation-main">
-                                <button class="page-number current-page ">1</button>
-                                <button class="page-number ">2</button>
-                                <button class="page-number skip-page">...</button>
-                                <button class="page-number ">4</button>
-                                <button class="page-number ">5</button>
-                            </div>
-                            <button class="paging__navigation-button next-page">Sau</button>
+                            <span class="paging__navigation__title"> <b style="color: #000; font-size: 16px;">1</b> - <b style="color: #000; font-size: 16px;">9</b> bản ghi</span>
+                            <button class="mi-icon mi-icon-24 paging__navigation-button pre-page disabled"></button>
+                            <button class="mi-icon mi-icon-24 paging__navigation-button next-page"></button>
                         </div>
                     </div>
                 </div>
@@ -252,8 +246,59 @@
 
     <!-- add employee -->
     <div class="formEmployee">
-        <div class="formEmployee__body">
-            <div class="body__container">
+        <div class="formEmployee__container">
+            <div class="container__header">
+                <div class="container__header--left">
+                    <div class="container__header__title">
+                        Thông tin nhân viên
+                    </div>
+                    <div class="container__header__input">
+                        <input type="checkbox" name="" id="">
+                        <span class="checkbox-name">Là khách hàng</span>
+                    </div>
+                    <div class="container__header__input right">
+                        <input type="checkbox" name="" id="">
+                        <span class="checkbox-name">Là nhà cung cấp</span>
+                    </div>
+                </div>
+
+                <div class="container__header--right">
+                    <button>
+                        1
+                    </button>
+                    <button>
+                        2
+                    </button>
+                </div>
+            </div>
+
+            <div class="container__body">
+                <div class="body--basic-info">
+                    <div class="info--notEmpty">
+                        info1
+                    </div>
+                    <div class="info--optional">
+                        info2
+                    </div>
+                </div>
+                <div class="body--contact-info">
+                    info3
+
+                </div>
+            </div>
+
+            <div class="container__footer">
+                <button class="cancel">
+                    Huỷ
+                </button>
+                <div class="add-employee">
+                    <button class="add-to-table">
+                        Cất
+                    </button>
+                    <button class="add-to-database">
+                        Cất và thêm
+                    </button>
+                </div>
 
             </div>
         </div>

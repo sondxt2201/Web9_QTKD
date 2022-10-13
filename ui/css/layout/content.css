@@ -49,16 +49,19 @@
 .content__footer {
     position: absolute;
     bottom: 10px;
-    width: calc(100% - 16px);
-    height: 48px;
+    width: calc(100% - 6px);
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px;
+    padding: 16px 0 16px 16px;
     background-color: #fff;
     z-index: 2;
     /* display: none; */
 }
+
+/*--- footer__left ---*/
+
 
 /*--- footer__right ---*/
 
@@ -69,14 +72,42 @@
 
 /* footer__combobox */
 .paging__combobox {
+    position: relative;
     display: flex;
+    align-items: center;
+    padding: 12px 16px;
 }
 
-/* paging */
+.paging__combobox__title {
+    font-size: 14px;
+    color: #6d6d6d;
+}
+
+.combobox .paging__combobox__input {
+    width: 76px;
+    height: 36px;
+    border-radius: 4px;
+    border: 1px solid #CEEAD9;
+    margin: 0 6px;
+    padding: 8px 8px 8px 12px; 
+}
+
+.paging__combobox__input:focus-visible {
+    outline: none;
+	border: 1px solid #089740;
+	cursor: text;
+	border-radius: 4px;
+}
+
+
+
+
+/* paging__navigation */
 .footer__right .paging__navigation {
     display: flex;
-    padding: 0 16px;
+    height: 60px;
     align-items: center;
+    padding: 12px 16px;
 }
 
 .paging__navigation .paging__navigation-main {
@@ -94,35 +125,23 @@
     cursor: default;
 }
 
-.pre-page {
+.paging__navigation__title {
+    font-size: 14px;
+    color: #6d6d6d;
+    margin-right: 16px;
+}
+
+.paging__navigation {
+    display: flex;
+}
+
+.paging__navigation-button.pre-page {
     margin-right: 12px;
 }
 
-.next-page {
-    margin-left: 12px;
+.paging__navigation-button.next-page {
+    margin-right: 0;
 }
 
-.paging__navigation .paging__navigation-main .page-number {
-    height: 20px;
-    width: 20px;
-    margin: 0 4px;
-    padding: 0;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    background-color: unset;
-    border-radius: 2px;
-}
 
-.page__number:focus {
-    border: 1px solid #c7c7c7;
-    font-weight: 700;
-    color: #000;
-}
-
-.current-page {
-    border: 1px solid #c7c7c7 !important;
-    font-weight: 700;
-    color: #000;
-}
 

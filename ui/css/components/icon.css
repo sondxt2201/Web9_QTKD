@@ -117,9 +117,8 @@
 .mi-toolbar-icon-search {
     background-position: -31px -1663px;
     position: relative;
-    right: 28px;
+    right: 30px;
     border: none;
-    margin-right: 4px;
 }
 
 .mi-toolbar-icon-refresh {
@@ -143,11 +142,19 @@
 
 /*--- footer --- */
 .mi-footer-icon-dropdown {
-    background-position: -551px -349px;
-    position: relative;
-    right: 36px;
-    border-left: 1px solid #CEEAD9;
-    top: 1px;
-    width: 36px;
-    height: 34.15px;
+    background-position: -557px -356px;
+    position: absolute;
+    right: 23px;
+    top: 18px;
+    height: 24px;
+    margin: 0;
+}
+
+/*--- paging navigation ---*/
+.pre-page.disabled {
+    background-position: -30px -405px;
+}
+
+.next-page {
+    background-position: -76px -357px;
 }
