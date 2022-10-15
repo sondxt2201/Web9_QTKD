@@ -7,7 +7,7 @@
     display: flex;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.5);
-    /* display: none; */
+    display: none;
 }
 
 .formEmployee__container {
@@ -28,8 +28,8 @@
     justify-content: space-between;
     align-items: center;
     height: 96px;
-    width: 100%;
-    padding: 32px 32px 32px;
+    /* width: 100%; */
+    padding: 32px 32px;
 }
 
 .formEmployee .container__header--left {
@@ -52,6 +52,7 @@
     padding-right: 24px;
 }
 
+
 .formEmployee .container__header__input .checkbox-name {
     padding: 12px;
 }
@@ -65,7 +66,52 @@
     position: relative;
 }
 
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    margin: 0 0 16px 12px;
+}
 
+.form-group1 {
+    display: flex;
+    flex-direction: column;
+    width: calc(40% - 12px);
+    position: relative;
+    margin: 0 0 16px 12px;
+
+}
+
+.form-group2 {
+    display: flex;
+    flex-direction: column;
+    width: calc(60% - 12px);
+    position: relative;
+    margin: 0 0 16px 12px;
+}
+
+.form-group3 {
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.form-group4 {
+    flex-direction: column;
+    margin: 0 24px 16px 0px;
+}
+
+.form-label {
+    font-size: 13px;
+    font-weight: 600;
+    padding-bottom: 6px;
+    width: calc(100% - 12px);
+}
+
+.form-message {
+    color: red;
+}
 
 /*--- body ---*/
 /*---not empty ---*/
@@ -73,70 +119,41 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 0 32px 32px 32px;
-    width: 100%;
+    padding: 0px 32px 32px 32px;
 }
 
 .formEmployee .body--basic-info {
     width: 100%;
 }
 
-.form-group {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    position: relative;
-    padding-bottom: 16px;
-}
-
-.form-group1 {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    position: relative;
-    padding-bottom: 16px;
-
-}
-
-.form-group2 {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    padding-bottom: 16px;
-}
-
-.form-label {
-    font-size: 13px;
-    font-weight: 600;
-    padding-bottom: 6px;
-}
-
-.form-message {
-    color: red;
-}
 
 .formEmployee .container__body .input {
     padding: 0 12px 0 10px;
-    margin-right: 12px;
 }
 
-/* .formEmployee .body--basic-info {
-    display: flex;
-    height: 50%;
-} */
 
 .formEmployee .info--notEmpty {
     width: 50%;
-    padding-right: 24px;
+    /* margin-right: 12px; */
 }
 
+.info--notEmpty__info1 {
+    justify-content: space-between;
+}
 
 
 /*---*/
 /*---*/
 /*--- optional info */
 .formEmployee .info--optional {
-    flex: 1;
+    width: 50%;
+    margin-left: 12px;
+}
+
+.info--optional .info--optional__info1,
+.info--optional .info--optional__info2 {
+    justify-content: space-between;
+    width: 100%;
 }
 
 .form-label--gender {
@@ -144,13 +161,14 @@
 }
 
 .gender-option {
+    width: calc(50% - 12px);
     flex-direction: row;
     margin-right: 10px;
     align-items: center;
 }
 
 .gender-select {
-    flex: 1;
+    width: calc(100% - 12px);
     align-items: center;
 }
 
@@ -162,14 +180,37 @@
     padding-left: 12px;
 }
 
+.form-group1 .form-control-employeecode.input.id-date,
+.form-group1 .form-control-employeecode.input.born-date {
+    padding-right: 36px
+}
 
+.form-control-position.input {
+    margin-right: 0;
+
+}
+
+.no-left {
+    margin-left: 0;
+    /* margin-right: 12px */
+}
 
 /*---*/
 /*---*/
 /*--- contact-info ---*/
 .formEmployee .body--contact-info {
-    flex: 1;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
 
+.contact-info1 {
+    width: 100%;
+}
+
+.contact-info2 {
+    justify-content: space-around;
+    align-items: center;
 }
 
 
@@ -184,4 +225,22 @@
     justify-content: space-between;
     border-top: 1px solid;
     box-sizing: border-box;
+}
+
+.formEmployee .container__footer .cancel.button,
+.formEmployee .container__footer .add-to-table.button {
+    background-color: #fff;
+    border: 1px solid #409330;
+    color: #000;
+    margin-right: 16px
+}
+
+.formEmployee .container__footer .cancel.button:hover {
+    border: 1px solid #73C663;
+    color: #ccc;
+}
+
+.formEmployee .container__footer .add-to-table.button:hover {
+    border: 1px solid #73C663;
+    color: #ccc;
 }

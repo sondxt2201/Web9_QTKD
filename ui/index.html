@@ -136,7 +136,7 @@
                 <!-- main-page__content -->
                 <!-- toolbar -->
                 <div class="content__toolbar">
-                    <input type="text" class="toolbar-input input" placeholder="Tìm theo mã, tên nhân viên"/>
+                    <input type="text" class="toolbar-input input" placeholder="Tìm theo mã, tên nhân viên" />
                     <button class="mi-icon mi-icon-20 mi-toolbar-icon-search"></button>
                     <button id="btnReload" class="mi-icon mi-icon-24 mi-toolbar-icon-refresh"></button>
                 </div>
@@ -149,7 +149,8 @@
                         <!-- table head -->
                         <thead>
                             <tr>
-                                <th class="justify-center no_padding table-anchor-left" prop-name="checkbox" style="min-width: 48px;">
+                                <th class="justify-center no_padding table-anchor-left" prop-name="checkbox"
+                                    style="min-width: 48px;">
                                     <input type="checkbox">
                                 </th>
                                 <th class="text__align--left" prop-name="employeeCode"
@@ -186,9 +187,10 @@
 
                         <!-- table body -->
                         <tbody>
-                            
+
                             <tr>
-                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left" style="min-width: 48px;">
+                                <td id="EmployeeCode" class="text__align--center no_padding table-anchor-left"
+                                    style="min-width: 48px;">
                                     <input type="checkbox">
                                 </td>
                                 <td class="text__align--left" style="min-width: 150px;">123456</td>
@@ -203,7 +205,7 @@
                                 <td class="text__align--left" style="min-width: 180px;">Chi nhánh TK ngân hàng</td>
                                 <td class="text__align--center no_padding table-anchor-right" style="min-width: 120px;">
                                     <div class="table__combobox combobox">
-                                        <a href="" class="table__combobox__title">Sửa</a> 
+                                        <a href="" class="table__combobox__title">Sửa</a>
                                         <div class="table__combobox__dropdown">
                                             <div class="mi-icon mi-icon-16 mi-table-icon-dropdown"></div>
                                             <!-- LÀM SAU -->
@@ -228,7 +230,8 @@
                             <div class="mi-icon mi-icon-24 mi-footer-icon-dropdown"></div>
                         </div>
                         <div class="paging__navigation">
-                            <span class="paging__navigation__title"> <b style="color: #000; font-size: 16px;">1</b> - <b style="color: #000; font-size: 16px;">9</b> bản ghi</span>
+                            <span class="paging__navigation__title"> <b style="color: #000; font-size: 16px;">1</b> - <b
+                                    style="color: #000; font-size: 16px;">9</b> bản ghi</span>
                             <button class="mi-icon mi-icon-24 paging__navigation-button pre-page disabled"></button>
                             <button class="mi-icon mi-icon-24 paging__navigation-button next-page"></button>
                         </div>
@@ -253,11 +256,11 @@
                         Thông tin nhân viên
                     </div>
                     <div class="container__header__input">
-                        <input type="checkbox" name="" id="">
+                        <input type="checkbox" name="header-name" id="">
                         <span class="checkbox-name">Là khách hàng</span>
                     </div>
                     <div class="container__header__input right">
-                        <input type="checkbox" name="" id="">
+                        <input type="checkbox" name="header-name" id="">
                         <span class="checkbox-name">Là nhà cung cấp</span>
                     </div>
                 </div>
@@ -270,17 +273,18 @@
 
             <div class="container__body">
                 <div class="body--basic-info flex">
+
                     <div class="info--notEmpty">
-                        <div class="info--notEmpty__info1 flex">
-                            <div class="form-group1 flex">
-                                <label for="employee-code" class="form-label employee-code">
-                                    Mã
+                        <div class="info--notEmpty__info1 flex no-left">
+                            <div class="form-group1 flex no-left">
+                                <label for="" class="form-label employee-code">
+                                    <label for="employee-code" class="form-label employee-code">Mã</label>
                                     <span class="form-message">*</span>
                                 </label>
                                 <input type="text" name="name" id="" class="form-control-employee-code input ">
                             </div>
 
-                            <div class="form-group2 flex">
+                            <div class="form-group2 flex no-left">
                                 <label for="name" class="form-label name">
                                     Tên
                                     <span class="form-message">*</span>
@@ -289,7 +293,7 @@
                             </div>
                         </div>
                         <div class="info--notEmpty__info2">
-                            <div class="form-group flex combobox">
+                            <div class="form-group flex combobox no-left">
                                 <label for="department" class="form-label department">
                                     Đơn vị
                                     <span class="form-message">*</span>
@@ -298,23 +302,24 @@
                                 <button class="mi-icon mi-form-icon-dropdown"></button>
                             </div>
 
-                            <div class="form-group flex">
+                            <div class="form-group flex no-left">
                                 <label for="position" class="form-label position">Chức danh</label>
                                 <input type="text" name="name" id="" class="form-control-position input">
-                                <span class="form-message"></span>
+                                <!-- <span class="form-message"></span> -->
                             </div>
                         </div>
                     </div>
 
                     <div class="info--optional">
                         <div class="info--optional__info1 flex">
-                            <div class="form-group1 flex">
+                            <div class="form-group1 flex no-left">
                                 <label for="" class="form-label date-Of-Birth">Ngày sinh</label>
-                                <input type="text" name="name" id="" class="form-control-employeecode input born-date" placeholder="DD/MM/YYYY">
+                                <input type="text" name="name" id="" class="form-control-employeecode input born-date"
+                                    placeholder="DD/MM/YYYY">
                                 <div class="calender mi-icon mi-icon-16 mi-form-icon-calender"></div>
                             </div>
 
-                            <div class="form-group flex">
+                            <div class="form-group2 flex">
                                 <label for="gender" class="form-label form-label--gender ">Giới tính</label>
                                 <ul class="gender-select flex">
                                     <li class="gender-option flex">
@@ -332,7 +337,7 @@
                         </div>
 
                         <div class="info--optional__info2 flex">
-                            <div class="form-group flex">
+                            <div class="form-group2 flex no-left">
                                 <label for="" class="form-label idNumber">
                                     Số CMND
                                     <!-- <span class="form-message">*</span> -->
@@ -342,40 +347,85 @@
 
                             <div class="form-group1 flex">
                                 <label for="id-date" class="form-label form-label--id-date">Ngày cấp</label>
-                                <input type="text" name="name" id="" class="form-control-employeecode input id-date" placeholder="DD/MM/YYYY">
+                                <input type="text" name="name" id="" class="form-control-employeecode input id-date"
+                                    placeholder="DD/MM/YYYY">
                                 <div class="calender mi-icon mi-icon-16 mi-form-icon-calender"></div>
                             </div>
                         </div>
 
-                        <div class="form-group flex">
-                                <label for="id-address" class="form-label id-address">Nơi cấp</label>
-                                <input type="text" name="name" id="" class="form-control-position input">
-                                <span class="form-message"></span>
+                        <div class="form-group flex no-left">
+                            <label for="id-address" class="form-label id-address">Nơi cấp</label>
+                            <input type="text" name="name" id="" class="form-control-position input">
+                            <!-- <span class="form-message"></span> -->
                         </div>
-                        
+
                     </div>
+
                 </div>
                 <div class="body--contact-info flex">
-                    <div class="contact-info-info1">
-                        <div class="form-group flex">
-                            <label for="address" class="form-label address">contact</label>
-                            <input type="text" name="name" id="" class="form-control-position input">
-                            <span class="form-message"></span>
-                    </div>
-                </div>
 
+                    <div class="contact-info1">
+                        <div class="form-group3 flex">
+                            <label for="address" class="form-label address">Địa chỉ</label>
+                            <input type="text" name="name" id="" class="form-control-contact input">
+                            <!-- <span class="form-message"></span> -->
+                        </div>
+                    </div>
+
+                    <div class="contact-info2">
+                        <div class="contact-info2--phone flex">
+                            <div class="form-group4 flex">
+                                <label for="cellphone" class="form-label cellphone">ĐT di động</label>
+                                <input type="text" name="name" id="" class="form-control-contact input" placeholder="0912-345-678">
+                                <!-- <span class="form-message"></span> -->
+                            </div>
+
+                            <div class="form-group4 flex">
+                                <label for="phone" class="form-label phone">ĐT cố định</label>
+                                <input type="text" name="name" id="" class="form-control-contact input" placeholder="(080)-43162">
+                                <!-- <span class="form-message"></span> -->
+                            </div>
+
+                            <div class="form-group4 flex">
+                                <label for="email" class="form-label email">Email</label>
+                                <input type="text" name="name" id="" class="form-control-contact input" placeholder="abc@def.com">
+                                <!-- <span class="form-message"></span> -->
+                            </div>
+                        </div>
+
+                        <div class="contact-info2--bank flex">
+                            <div class="form-group4 flex">
+                                <label for="bank-account" class="form-label bank-account">Tài khoản ngân hàng</label>
+                                <input type="text" name="name" id="" class="form-control-contact input" placeholder="19024-70518-3012">
+                                <!-- <span class="form-message"></span> -->
+                            </div>
+
+                            <div class="form-group4 flex">
+                                <label for="bank-name" class="form-label bank-name">Tên ngân hàng</label>
+                                <input type="text" name="name" id="" class="form-control-contact input" placeholder="Techcombank">
+                                <!-- <span class="form-message"></span> -->
+                            </div>
+
+                            <div class="form-group4 flex">
+                                <label for="bank-address" class="form-label bank-address">Chi nhánh</label>
+                                <input type="text" name="name" id="" class="form-control-contact input" placeholder="Hàng Đậu">
+                                <!-- <span class="form-message"></span> -->
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
 
             <div class="container__footer">
-                <button class="cancel">
+                <button class="cancel button">
                     Huỷ
                 </button>
                 <div class="add-employee">
-                    <button class="add-to-table">
+                    <button class="add-to-table button">
                         Cất
                     </button>
-                    <button class="add-to-database">
+                    <button class="add-to-database button">
                         Cất và thêm
                     </button>
                 </div>

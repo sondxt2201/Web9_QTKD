@@ -184,7 +184,7 @@
     position: absolute;
     width: 34px;
     height: 34.2px;
-    right: 13px;
+    right: 1px;
     top: 27.6px;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
@@ -206,7 +206,7 @@
     background-position: -128px -312px;
     position: absolute;
     top: 37px;
-    right: 22px;
+    right: 10px;
     background-color: #fff;
     /* border: 1px solid; */
 }
