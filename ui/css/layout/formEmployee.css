@@ -5,7 +5,7 @@
     bottom: 0;
     left: 0;
     display: flex;
-    z-index: 2;    
+    z-index: 2;
     background-color: rgba(0, 0, 0, 0.5);
     /* display: none; */
 }
@@ -14,11 +14,11 @@
     margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content: space-between;
     background-color: rgb(255, 255, 255);
     border-radius: 4px;
-    width: 900px;
-    height: 625px;
+    width: 80%;
+    height: 95%;
     box-sizing: border-box;
 }
 
@@ -38,6 +38,7 @@
     align-items: center;
 
 }
+
 .formEmployee .container__header__title {
     font-weight: 700;
     font-size: 24px;
@@ -59,34 +60,119 @@
     position: relative;
 }
 
+.container__header--right {
+    display: flex;
+    position: relative;
+}
+
 
 
 /*--- body ---*/
+/*---not empty ---*/
 .formEmployee .container__body {
     flex: 1;
     display: flex;
     flex-direction: column;
     padding: 0 32px 32px 32px;
+    width: 100%;
 }
 
 .formEmployee .body--basic-info {
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    padding-bottom: 16px;
+}
+
+.form-group1 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    position: relative;
+    padding-bottom: 16px;
+
+}
+
+.form-group2 {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding-bottom: 16px;
+}
+
+.form-label {
+    font-size: 13px;
+    font-weight: 600;
+    padding-bottom: 6px;
+}
+
+.form-message {
+    color: red;
+}
+
+.formEmployee .container__body .input {
+    padding: 0 12px 0 10px;
+    margin-right: 12px;
+}
+
+/* .formEmployee .body--basic-info {
     display: flex;
     height: 50%;
-}
+} */
 
 .formEmployee .info--notEmpty {
     width: 50%;
     padding-right: 24px;
 }
 
+
+
+/*---*/
+/*---*/
+/*--- optional info */
 .formEmployee .info--optional {
     flex: 1;
 }
 
+.form-label--gender {
+    padding-left: 14px;
+}
+
+.gender-option {
+    flex-direction: row;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.gender-select {
+    flex: 1;
+    align-items: center;
+}
+
+.male {
+    padding-left: 12px;
+}
+
+.female {
+    padding-left: 12px;
+}
+
+
+
+/*---*/
+/*---*/
+/*--- contact-info ---*/
 .formEmployee .body--contact-info {
     flex: 1;
-    padding-top: 32px;
+
 }
+
+
 /*--- footer ---*/
 .formEmployee .container__footer {
     width: calc(100% - 64px);
@@ -99,5 +185,3 @@
     border-top: 1px solid;
     box-sizing: border-box;
 }
-
-

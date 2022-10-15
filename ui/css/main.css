@@ -81,4 +81,8 @@ body {
 .main-app {
     position: absolute;
 }
+ 
+.flex {
+    display: flex;
+}
 

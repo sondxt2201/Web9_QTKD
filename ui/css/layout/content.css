@@ -38,6 +38,11 @@
     padding: 16px;
 }
 
+.content__toolbar .toolbar-input {
+    min-width: 250px;
+
+}
+
 .content__toolbar-search:hover {
     outline: none;
     border: 1px solid #39AC66;

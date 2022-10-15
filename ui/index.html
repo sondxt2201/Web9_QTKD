@@ -263,26 +263,106 @@
                 </div>
 
                 <div class="container__header--right">
-                    <button>
-                        1
-                    </button>
-                    <button>
-                        2
-                    </button>
+                    <div class="mi-form-icon-help mi-icon mi-icon-24"></div>
+                    <div class="mi-form-icon-escape mi-icon mi-icon-24"></div>
                 </div>
             </div>
 
             <div class="container__body">
-                <div class="body--basic-info">
+                <div class="body--basic-info flex">
                     <div class="info--notEmpty">
-                        info1
+                        <div class="info--notEmpty__info1 flex">
+                            <div class="form-group1 flex">
+                                <label for="employee-code" class="form-label employee-code">
+                                    Mã
+                                    <span class="form-message">*</span>
+                                </label>
+                                <input type="text" name="name" id="" class="form-control-employee-code input ">
+                            </div>
+
+                            <div class="form-group2 flex">
+                                <label for="name" class="form-label name">
+                                    Tên
+                                    <span class="form-message">*</span>
+                                </label>
+                                <input type="text" name="name" id="" class="form-control-name input">
+                            </div>
+                        </div>
+                        <div class="info--notEmpty__info2">
+                            <div class="form-group flex combobox">
+                                <label for="department" class="form-label department">
+                                    Đơn vị
+                                    <span class="form-message">*</span>
+                                </label>
+                                <input type="text" name="name" id="" class="form-control-department input">
+                                <button class="mi-icon mi-form-icon-dropdown"></button>
+                            </div>
+
+                            <div class="form-group flex">
+                                <label for="position" class="form-label position">Chức danh</label>
+                                <input type="text" name="name" id="" class="form-control-position input">
+                                <span class="form-message"></span>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="info--optional">
-                        info2
+                        <div class="info--optional__info1 flex">
+                            <div class="form-group1 flex">
+                                <label for="" class="form-label date-Of-Birth">Ngày sinh</label>
+                                <input type="text" name="name" id="" class="form-control-employeecode input born-date" placeholder="DD/MM/YYYY">
+                                <div class="calender mi-icon mi-icon-16 mi-form-icon-calender"></div>
+                            </div>
+
+                            <div class="form-group flex">
+                                <label for="gender" class="form-label form-label--gender ">Giới tính</label>
+                                <ul class="gender-select flex">
+                                    <li class="gender-option flex">
+                                        <input type="radio" name="gender" id="radio-option" class="male">
+                                        <div class="check"></div>
+                                        <label for="radio-option" class="male">Nam</label>
+                                    </li>
+                                    <li class="gender-option flex">
+                                        <input type="radio" name="gender" id="radio-option" class="female">
+                                        <div class="check"></div>
+                                        <label for="radio-option" class="female">Nữ</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="info--optional__info2 flex">
+                            <div class="form-group flex">
+                                <label for="" class="form-label idNumber">
+                                    Số CMND
+                                    <!-- <span class="form-message">*</span> -->
+                                </label>
+                                <input type="text" name="name" id="" class="form-control-employeecode input ">
+                            </div>
+
+                            <div class="form-group1 flex">
+                                <label for="id-date" class="form-label form-label--id-date">Ngày cấp</label>
+                                <input type="text" name="name" id="" class="form-control-employeecode input id-date" placeholder="DD/MM/YYYY">
+                                <div class="calender mi-icon mi-icon-16 mi-form-icon-calender"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group flex">
+                                <label for="id-address" class="form-label id-address">Nơi cấp</label>
+                                <input type="text" name="name" id="" class="form-control-position input">
+                                <span class="form-message"></span>
+                        </div>
+                        
                     </div>
                 </div>
-                <div class="body--contact-info">
-                    info3
+                <div class="body--contact-info flex">
+                    <div class="contact-info-info1">
+                        <div class="form-group flex">
+                            <label for="address" class="form-label address">contact</label>
+                            <input type="text" name="name" id="" class="form-control-position input">
+                            <span class="form-message"></span>
+                    </div>
+                </div>
 
                 </div>
             </div>

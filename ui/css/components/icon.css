@@ -158,3 +158,55 @@
 .next-page {
     background-position: -76px -357px;
 }
+
+
+/*----- add employee form -----*/
+
+.mi-form-icon-help {
+    background-position: -89px -144px;
+    margin: 0;
+    position: relative;
+    top: -24px;
+    right: -8px;
+}
+
+.mi-form-icon-escape {
+    background-position: -144px -144px;
+    margin: 0;
+    position: relative;
+    top: -24px;
+    right: -20px;
+
+}
+
+.mi-form-icon-dropdown {
+    background-position: -358px -349px;
+    position: absolute;
+    width: 34px;
+    height: 34.2px;
+    right: 13px;
+    top: 27.6px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    outline: none;
+    border: none;
+}
+
+.mi-icon.mi-form-icon-dropdown:hover {
+    background-color: #e0e0e0;
+}
+
+/* .mi-icon.mi-form-icon-dropdown:active {
+    transform: rotate(180deg);
+    transition: all 0.1s ease;
+} */
+
+
+.mi-form-icon-calender {
+    background-position: -128px -312px;
+    position: absolute;
+    top: 37px;
+    right: 22px;
+    background-color: #fff;
+    /* border: 1px solid; */
+}

@@ -1,5 +1,5 @@
 .input {
-	min-width: 250px;
+	/* min-width: 250px; */
 	height: 36px;
 	padding: 0px 38px 0 12px;
 	border-radius: 4px;
@@ -8,9 +8,8 @@
 
 .input::placeholder {
 	color: #999999;
-	font-size: 14px;
+	font-size: 13px;
 	font-style: italic;
-
 }
 
 .input:focus-visible {
@@ -38,6 +37,81 @@ input[type='checkbox']:checked {
 }
 
 input[type='checkbox']:not(:checked) {
-	transition: all .1s ease;
+	transition: all .2s ease;
 	transform: rotate(-90deg);
+}
+
+/*---employee-form-gender-selection   */
+ul li {
+	display: flex;
+	flex-direction: column;
+}
+
+ul li input[type=radio] {
+	position: relative;
+	-webkit-appearance: none;
+	z-index: 10;
+	width: 15px;
+	height: 15px;
+	background: transparent;
+	border-radius: 50%;
+	padding: 3px;
+	cursor: pointer;
+	top: 0px;
+	right: -17px;
+	/* border: 1px solid red; */
+}
+
+ul li .check {
+	/* display: block; */
+	position: relative;
+	border: 1px solid;
+	border-radius: 50%;
+	height: 19px;
+	width: 19px;
+	top: 1px;
+}
+
+ul li label {
+	color: #000;
+	display: block;
+	cursor: pointer;
+}
+
+.form-group ul li:hover {
+	cursor: pointer;
+}
+
+ul li .check::before {
+	display: block;
+	position: relative;
+	content: '';
+	border-radius: 50%;
+	height: 13px;
+	width: 13px;
+	right: -2px;
+	top: 2px;
+}
+
+ul li .check::after {
+	display: block;
+	position: relative;
+	content: '';
+	border-radius: 50%;
+	height: 23px;
+	width: 23px;
+	right: 4px;
+	top: -17px;
+}
+
+input[type=radio]:checked~.check {
+	border: 1px solid #089740;
+}
+
+input[type=radio]:checked~.check::before {
+	background: #0DFF92;
+}
+
+input[type=radio]:checked~.check::after {
+	border: 1px solid #089740;
 }
