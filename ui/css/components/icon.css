@@ -138,6 +138,11 @@
 
 .mi-table-icon-dropdown {
     background-position: -896px -359px;
+    position: absolute;
+    right: 18px;
+    top: 0px;
+    z-index: 10;
+    border: none;
 }
 
 /*--- footer --- */

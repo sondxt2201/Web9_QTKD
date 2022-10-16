@@ -1,0 +1,56 @@
+.table__combobox__dropdown:hover .table__combobox__dropdown__option {
+    display: block;
+    animation: fadein ease-in 0.1s;
+
+}
+
+.table__combobox.combobox {
+    z-index: 99999999999;
+}
+
+.table__combobox__dropdown {
+    
+}
+
+.table__combobox__dropdown__option {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    border: 1px solid;
+    min-width: 140px;    
+    border-radius: 4px;
+    border: 1px solid #ccc;    
+    background: #fff;
+
+}
+
+.table__combobox__dropdown__option::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -19px;
+    width: 100%;
+    height: 20px;
+    /* background-color: red; */
+}
+.table-option-list {
+    text-align: left;    
+}
+
+.table-option-list li {
+    height: 36px;
+    padding: 2px 0 0 6px;
+    line-height: 36px;
+}
+.table-option-list li:first-child {
+    margin-bottom: 0;
+}
+.table-option-list li:last-child {
+    margin-top: 0;
+}
+
+.table-option-list li:hover {
+    background-color: #e5e8ec;
+    color: #96D58A;
+}

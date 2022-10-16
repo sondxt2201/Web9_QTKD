@@ -43,7 +43,7 @@ input[type='checkbox']:not(:checked) {
 
 /*---employee-form-gender-selection   */
 ul li {
-	display: flex;
+	list-style-type: none;
 	flex-direction: column;
 }
 
@@ -78,7 +78,7 @@ ul li label {
 	cursor: pointer;
 }
 
-.form-group ul li:hover {
+ul li:hover {
 	cursor: pointer;
 }
 

@@ -40,20 +40,21 @@ th {
 /* anchor column */
 .table-anchor-left {
     left: 0;
+    top: 0;
     position: sticky;
-    z-index: 1;
 }
 
 .table-anchor-right {
+    top: 0;
     right: 0;
     position: sticky;
     border-left: 1px solid #c7c7c7;
     border-right: none;
-    z-index: 1;
 }
 
 thead .table-anchor-left,
 thead .table-anchor-right {
+    z-index: 3;
     top: 0;
     background-color: #e5e8ec;
 }
@@ -61,15 +62,14 @@ thead .table-anchor-right {
 tbody .table-anchor-right,
 tbody .table-anchor-left {
     background-color: #fff;
-    ;
 }
 
-tbody:hover {
+tbody tr:hover {
     background-color: #d1e5f6;
 }
 
-tbody:hover .table-anchor-left,
-tbody:hover .table-anchor-right {
+tbody tr:hover .table-anchor-left,
+tbody tr:hover .table-anchor-right {
     background-color: #d1e5f6;
 }
 
@@ -101,14 +101,22 @@ tbody:hover .table-anchor-right {
 }
 
 .table__combobox__title {
+    border: none;
     width: 36px;
     height: 22px;
     color: #0075c0;
     font-size: 14px;
     font-weight: 600;
-    text-decoration: none;
+    text-decoration: none;    
+    background-color: unset;
+
+}
+.table__combobox__title:hover,
+.table__combobox__title:focus {
+    background-color: unset;
 }
 
 .table__combobox__dropdown {
     padding: 8px 10px;
+    position: relative;
 }
