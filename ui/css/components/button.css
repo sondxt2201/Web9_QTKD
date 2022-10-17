@@ -1,6 +1,6 @@
 .button {
     min-width: 80px;
-    min-height: 36px;
+    height: 36px;
     border-radius: 4px;
     background: #409330;
     font-weight: 500;
@@ -9,10 +9,13 @@
     color: #fff;
     padding: 0 16px 0 16px;
     border: none;
+    font-weight: bolder;
+
 }
 
-.button:hover,
-.button:focus {
+
+/* .button:focus,*/
+.button:hover { 
     background-color: #73C663;
     cursor: pointer;
 }
@@ -20,6 +23,17 @@
 .main-page__header-button {
     color: #fff;
 }
+
+/* .button.white-background {
+    background-color: #fff;
+    border: 1px solid black;
+    color: black;    
+}
+
+.button.white-background:hover{
+    background-color: #ccc;
+} */
+
 
 
 

@@ -120,3 +120,10 @@ tbody tr:hover .table-anchor-right {
     padding: 8px 10px;
     position: relative;
 }
+
+.no-right-border {
+    border-right: none;
+}
+
+
+

@@ -1,6 +1,8 @@
 .mi-icon {
     background: url('/assets/img/Sprites.64af8f61.svg') no-repeat;
     cursor: pointer;
+    outline: none;
+    border: none;
 }
 
 .mi-icon-24 {
@@ -13,6 +15,14 @@
 }
 
 /*----- header icon -----*/
+.mi-icon-14 {
+    width: 14px;
+    height: 14px;
+    min-width: 14px;
+    min-height: 14px;
+    padding: 2px;
+}
+
 .mi-header-icon-bell {
     background-position: -787px -30px;
     cursor: pointer;
@@ -141,18 +151,15 @@
     position: absolute;
     right: 18px;
     top: 0px;
-    z-index: 10;
     border: none;
 }
 
 /*--- footer --- */
 .mi-footer-icon-dropdown {
-    background-position: -557px -356px;
+    background-position: -561px -360px;
     position: absolute;
-    right: 23px;
-    top: 18px;
-    height: 24px;
-    margin: 0;
+    right: 29px;
+    top: 22px;
 }
 
 /*--- paging navigation ---*/
@@ -160,6 +167,9 @@
     background-position: -30px -405px;
 }
 
+.pre-page {
+    background-position: -31px -357px;
+}
 .next-page {
     background-position: -76px -357px;
 }
@@ -214,4 +224,44 @@
     right: 10px;
     background-color: #fff;
     /* border: 1px solid; */
+}
+
+/*----- dialog -----*/
+
+.mi-icon-38 {
+    width: 38px;
+    height: 38px;
+    min-width: 36px;
+    min-height: 36px;
+    padding: 2px;
+}
+
+.dialog-icon {
+    margin-right: 36px;
+    cursor: default;
+}
+
+.mi-dialog-icon-warning {
+    background-position: -752px -462px;
+    /* border: 1px solid; */
+}
+
+.mi-dialog-icon-error {
+    background-position: -598px -463px;
+    /* border: 1px solid; */
+}
+
+.mi-dialog-icon-deleterequest {
+    background-position: -598px -463px;
+}
+
+.mi-dialog-icon-saverequest {
+    background-position: -672px -462px;
+}
+
+
+/*----- date picker -----*/
+.mi-datepicker-icon-dropdown {
+    background-position: -1797px -473px;
+    margin-left: 3px;
 }

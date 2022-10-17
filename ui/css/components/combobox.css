@@ -1,15 +1,8 @@
+/*--- Table ---*/
 .table__combobox__dropdown:hover .table__combobox__dropdown__option {
     display: block;
     animation: fadein ease-in 0.1s;
 
-}
-
-.table__combobox.combobox {
-    z-index: 99999999999;
-}
-
-.table__combobox__dropdown {
-    
 }
 
 .table__combobox__dropdown__option {
@@ -22,7 +15,6 @@
     border-radius: 4px;
     border: 1px solid #ccc;    
     background: #fff;
-
 }
 
 .table__combobox__dropdown__option::before {
@@ -35,22 +27,72 @@
     /* background-color: red; */
 }
 .table-option-list {
-    text-align: left;    
+    text-align: left;   
+    /* height: 100%; */
+ 
 }
 
 .table-option-list li {
     height: 36px;
-    padding: 2px 0 0 6px;
+    padding-left: 8px;
     line-height: 36px;
-}
-.table-option-list li:first-child {
-    margin-bottom: 0;
-}
-.table-option-list li:last-child {
-    margin-top: 0;
+    /* margin: 8px; */
+    /* border-radius: 4px; */
 }
 
-.table-option-list li:hover {
+
+.combobox li:hover {
     background-color: #e5e8ec;
     color: #96D58A;
+}
+
+
+/*--- Footer ---*/
+.footer__combobox__dropdown:hover .footer__combobox__dropdown__option {
+    display: block;
+    animation: fadein ease-in 0.1s;
+
+}
+.footer__combobox__dropdown__option {
+    display: none;
+    position: absolute;
+    bottom: 47px;
+    right: 22px;
+    border: 1px solid;
+    width: 33%;    
+    border-radius: 4px;
+    border: 1px solid #ccc;    
+    background: #fff;
+    z-index: 10;
+}
+
+.footer-option-list li {
+    /* height: 36px; */
+    padding-left: 8px;
+    line-height: 32px;
+    /* margin: 8px 0; */
+}
+
+.footer__combobox__dropdown__option::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    height: 24px;
+    /* background-color: red; */
+}
+
+
+
+.combobox-list li:first-child {
+    /* padding-top: 8px; */
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.combobox-list li:last-child {
+    /* padding-bottom: 8px;     */
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+
 }

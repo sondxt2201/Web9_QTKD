@@ -7,6 +7,7 @@
     display: flex;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.5);
+
     display: none;
 }
 
@@ -17,8 +18,8 @@
     justify-content: space-between;
     background-color: rgb(255, 255, 255);
     border-radius: 4px;
-    width: 80%;
-    height: 95%;
+    width: 900px;
+    height: 700px;
     box-sizing: border-box;
 }
 
@@ -228,14 +229,18 @@
 }
 
 .formEmployee .container__footer .cancel.button,
-.formEmployee .container__footer .add-to-table.button {
+.formEmployee .container__footer .add-to-table.button, 
+.cancel.button,
+.decline.button {
     background-color: #fff;
     border: 1px solid #409330;
     color: #000;
-    margin-right: 16px
+    margin-right: 12px
 }
 
-.formEmployee .container__footer .cancel.button:hover {
+.formEmployee .container__footer .cancel.button:hover,
+.cancel.button:hover,
+.decline.button:hover {
     border: 1px solid #73C663;
     color: #ccc;
 }
@@ -243,4 +248,72 @@
 .formEmployee .container__footer .add-to-table.button:hover {
     border: 1px solid #73C663;
     color: #ccc;
+}
+
+
+/*--- date-picker ---*/
+.datepicker {
+    background-color: #fff;
+    z-index: 10;
+    border: 1px solid;
+    position: absolute;
+    right: 0px;
+    width: 200%;
+    height: 322px;
+    padding: 24px;
+    border-radius: 4px;
+    display: none;
+}
+.datepicker::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: 0px;
+    width: 100%;
+    height: 24px;
+    /* background-color: red; */
+}
+
+
+.datepicker__header {
+    align-items: center;
+    justify-content: space-between;
+    height: 24px;
+}
+.datepicker__header-left {
+    align-items: center;
+}
+
+.datepicker__navigation-button.pre-page {
+    margin-right: 8px
+}
+
+.datepicker__body {
+    height: calc(100% - 72px);
+    border: 1px solid;
+    margin: 12px 0;
+}
+
+
+.datepicker__footer {
+    height: 48px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    color: #409330;
+    cursor: pointer;
+    /* border-top: 1px solid; */
+}
+.datepicker__footer::before {
+    content: "";
+    position: absolute;
+    border-top: 1px solid #73C663;
+    bottom: 47px;
+    width: 119%;
+}
+
+
+.datepicker-wrapper:hover  .datepicker {
+    display: block;
+    animation: fadein ease-in 0.1s;
 }

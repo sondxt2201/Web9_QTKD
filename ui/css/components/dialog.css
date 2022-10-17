@@ -1,0 +1,150 @@
+.dialog-wrapper {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+/*--- warning ---*/
+.dialog-warning {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    width: 550px;
+    height: 250px;
+    box-sizing: border-box;
+    padding: 24px;
+    overflow: auto;
+    display: none;
+
+}
+
+.dialog__header {
+    flex: 1;
+}
+
+.dialog__body {
+    flex: 2;
+    align-items: center;
+    border-bottom: 1px solid #409330;
+}
+
+.dialog-warning .dialog__footer {
+    flex: 2;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*--- error ---*/
+.dialog-error {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    width: 550px;
+    height: 250px;
+    box-sizing: border-box;
+    padding: 24px;
+    overflow: auto;
+
+    display: none;
+}
+
+.dialog__header {
+    flex: 1;
+}
+
+.dialog__body {
+    flex: 2;
+    align-items: center;
+    border-bottom: 1px solid #409330;
+}
+
+.dialog__footer {
+    flex: 2;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*--- delete request ---*/
+.dialog-deleterequest {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    width: 550px;
+    height: 250px;
+    box-sizing: border-box;
+    padding: 24px;
+    overflow: auto;
+
+    display: none;
+}
+
+.dialog__header {
+    flex: 1;
+}
+
+.dialog__body {
+    flex: 2;
+    align-items: center;
+    border-bottom: 1px solid #409330;
+}
+
+.dialog-deleterequest .dialog__footer {
+    flex: 2;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*--- save request ---*/
+.dialog-saverequest {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    width: 550px;
+    height: 250px;
+    box-sizing: border-box;
+    padding: 24px;
+    overflow: auto;
+
+    display: none;
+}
+
+.dialog__header {
+    flex: 1;
+}
+
+.dialog__body {
+    flex: 2;
+    align-items: center;
+    border-bottom: 1px solid #409330;
+}
+
+.dialog-saverequest .dialog__footer {
+    flex: 2;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dialog-saverequest .dialog__footer .dialog__footer-right .decline {
+    margin-right: 8px;
+}

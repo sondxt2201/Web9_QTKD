@@ -53,7 +53,7 @@
 /*----- main-page__content__footer -----*/
 .content__footer {
     position: absolute;
-    bottom: 9px;
+    bottom: 10px;
     width: calc(100% - 16px);
     height: 60px;
     display: flex;
@@ -94,7 +94,7 @@
     border-radius: 4px;
     border: 1px solid #CEEAD9;
     margin: 0 6px;
-    padding: 8px 8px 8px 12px; 
+    padding: 8px 24px 8px 12px; 
 }
 
 .paging__combobox__input:focus-visible {
