@@ -20,6 +20,9 @@
 }
 
 
+
+
+/*--- customer or supplier ---*/
 input[type='checkbox'] {
 	-webkit-appearance: none;
 	width: 24px;
@@ -40,6 +43,9 @@ input[type='checkbox']:not(:checked) {
 	transition: all .2s ease;
 	transform: rotate(-90deg);
 }
+
+
+
 
 /*---employee-form-gender-selection   */
 ul li {

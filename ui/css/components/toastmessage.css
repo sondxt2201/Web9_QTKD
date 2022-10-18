@@ -1,0 +1,122 @@
+.toast-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: none;
+}
+
+.toast-right {
+    align-items: center;
+}
+
+.toast-undo {
+    text-decoration: underline;
+    font-weight: 700;
+}
+/* toast success */
+.toast-success {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    width: 450px;
+    height: 56px;
+    box-sizing: border-box;
+    padding: 18px;
+    position: relative;
+    top: 100px;
+    left: 31%;
+
+    display: none;
+}
+
+.toast-success .toast-title {
+    color: #50B83C;
+    font-weight: 700;
+    margin-right: 2px
+}
+
+
+/* toast error */
+.toast-error {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    width: 50%;
+    height: 56px;
+    box-sizing: border-box;
+    padding: 18px;
+    position: relative;
+    top: 100px;
+    left: 23%;
+
+    display: none;
+}
+
+.toast-error .toast-title {
+    color: #DE3618;
+    font-weight: 700;
+    margin-right: 2px
+}
+
+
+/* toast warning */
+.toast-warning {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    width: 40%;
+    height: 56px;
+    box-sizing: border-box;
+    padding: 18px;
+    position: relative;
+    top: 100px;
+    left: 28%;
+
+    display: none;
+}
+
+.toast-warning .toast-title {
+    color: #fce100;
+    font-weight: 700;
+    margin-right: 2px
+}
+
+
+/* toast info */
+.toast-info {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    width: 40%;
+    height: 56px;
+    box-sizing: border-box;
+    padding: 18px;
+    position: relative;
+    top: 100px;
+    left: 28%;
+
+    display: none;
+}
+
+.toast-info .toast-title {
+    color: #ff7777;
+    font-weight: 700;
+    margin-right: 2px
+}

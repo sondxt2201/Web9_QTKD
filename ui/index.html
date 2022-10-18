@@ -471,7 +471,7 @@
                                         <div class="datepicker__header flex">
                                             
                                             <div class="datepicker__header-left flex">
-                                                Tháng 10, 2022
+                                                <span class="datepicker__header-title">Tháng 10, 2022</span> 
                                                 <div class="mi-icon mi-icon-14 mi-datepicker-icon-dropdown"></div>
                                             </div>
                                             <div class="datepicker__header-right">
@@ -528,7 +528,7 @@
                                         <div class="datepicker__header flex">
                                             
                                             <div class="datepicker__header-left flex">
-                                                Tháng 10, 2022
+                                                <span class="datepicker__header-title">Tháng 10, 2022</span>   
                                                 <div class="mi-icon mi-icon-14 mi-datepicker-icon-dropdown"></div>
                                             </div>
                                             <div class="datepicker__header-right">
@@ -716,7 +716,61 @@
 
     </div>
 
-    <!-- dialog -->
+    <!-- toast message -->
+    <div class="toast-wrapper">
+        <div class="toast-success">
+            <div class="toast-left flex">
+                <div class="mi-icon mi-icon-20 toast-icon mi-toast-icon-success"></div>
+                <span class="toast-title">Thành công!</span>
+                <span class="toast-content">Công việc đã bị xoá.</span> 
+            </div>
+
+            <div class="toast-right flex">
+                <span class="toast-undo">Hoàn tác</span>
+                <div class="mi-icon mi-icon-16 mi-toast-icon-quit"></div>
+            </div>
+        </div>
+
+        <div class="toast-error">
+            <div class="toast-left flex">
+                <div class="mi-icon mi-icon-20 toast-icon mi-toast-icon-error"></div>
+                <span class="toast-title">Lỗi!</span>
+                <span class="toast-content">Không thể cập nhật dữ liệu vui lòng kiểm tra lại internet.</span> 
+            </div>
+
+            <div class="toast-right flex">
+                <span class="toast-undo">Xem hướng dẫn</span>
+                <div class="mi-icon mi-icon-16 mi-toast-icon-quit"></div>
+            </div>
+        </div>
+
+        <div class="toast-warning">
+            <div class="toast-left flex">
+                <div class="mi-icon mi-icon-24 toast-icon mi-toast-icon-warning"></div>
+                <span class="toast-title">Cảnh báo!</span>
+                <span class="toast-content">Dữ liệu của bạn đã bị thay đổi bởi người dùng khác.</span> 
+            </div>
+
+            <div class="toast-right flex">
+                <span class="toast-undo"></span>
+                <div class="mi-icon mi-icon-16 mi-toast-icon-quit"></div>
+            </div>
+        </div>
+
+        <div class="toast-info">
+            <div class="toast-left flex">
+                <div class="mi-icon mi-icon-20 toast-icon mi-toast-icon-info"></div>
+                <span class="toast-title">Thông tin!</span>
+                <span class="toast-content">Bạn nên đọc kỹ nội dung trước khi gửi phê duyệt.</span> 
+            </div>
+
+            <div class="toast-right flex">
+                <span class="toast-undo"></span>
+                <div class="mi-icon mi-icon-16 mi-toast-icon-quit"></div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>

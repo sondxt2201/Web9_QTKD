@@ -265,3 +265,32 @@
     background-position: -1797px -473px;
     margin-left: 3px;
 }
+
+
+
+/*----- toast message -----*/
+.toast-icon {
+    margin-right: 10px;
+    cursor: default;
+}
+.mi-toast-icon-success {
+    background-position: -1602px -258px;
+}
+
+.mi-toast-icon-error {
+    background-position: -1189px -515px;
+}
+
+.mi-toast-icon-warning {
+    background-position: -817px -145px;
+}
+
+.mi-toast-icon-info {
+    background-position: -762px -146px;
+}
+.mi-toast-icon-quit {
+    background-position: -1177px -361px;
+    position: relative;
+    top: 1px;
+    margin-left: 16px;
+}
