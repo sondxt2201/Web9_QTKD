@@ -1,11 +1,11 @@
 /*--- Table ---*/
-.table__combobox__dropdown:hover .table__combobox__dropdown__option {
+.table-combobox-dropdown:hover .table-combobox-dropdown-option {
     display: block;
     animation: fadein ease-in 0.1s;
 
 }
 
-.table__combobox__dropdown__option {
+.table-combobox-dropdown-option {
     display: none;
     position: absolute;
     top: 20px;
@@ -19,7 +19,7 @@
     z-index: 10000000000000;
 }
 
-.table__combobox__dropdown__option::before {
+.table-combobox-dropdown-option::before {
     content: "";
     display: block;
     position: absolute;
@@ -50,12 +50,12 @@
 
 
 /*--- Footer ---*/
-.footer__combobox__dropdown:hover .footer__combobox__dropdown__option {
+.footer-combobox-dropdown:hover .footer-combobox-dropdown-option {
     display: block;
     animation: fadein ease-in 0.1s;
 
 }
-.footer__combobox__dropdown__option {
+.footer-combobox-dropdown-option {
     display: none;
     position: absolute;
     bottom: 47px;
@@ -75,7 +75,7 @@
     /* margin: 8px 0; */
 }
 
-.footer__combobox__dropdown__option::before {
+.footer-combobox-dropdown-option::before {
     content: "";
     display: block;
     position: absolute;

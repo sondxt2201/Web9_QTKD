@@ -5,7 +5,31 @@
     border: none;
 }
 
-.mi-icon-24 {
+.mi-icon-tiny {
+    width: 14px;
+    height: 14px;
+    min-width: 14px;
+    min-height: 14px;
+    padding: 2px;
+}
+
+.mi-icon-small {
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    min-height: 16px;
+    padding: 2px;
+}
+
+.mi-icon-medium {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+    padding: 2px;
+}
+
+.mi-icon-big {
     width: 24px;
     height: 24px;
     min-width: 24px;
@@ -14,14 +38,16 @@
     margin-right: 10px;
 }
 
-/*----- header icon -----*/
-.mi-icon-14 {
-    width: 14px;
-    height: 14px;
-    min-width: 14px;
-    min-height: 14px;
+.mi-icon-large {
+    width: 38px;
+    height: 38px;
+    min-width: 36px;
+    min-height: 36px;
     padding: 2px;
 }
+
+/*----- header icon -----*/
+
 
 .mi-header-icon-bell {
     background-position: -787px -30px;
@@ -33,9 +59,7 @@
     background-position: -1797px -473px;
     margin-left: 2px;
     cursor: pointer;
-    padding: 2px;
-    width: 14px;
-    height: 14px;
+
 }
 
 
@@ -51,8 +75,6 @@
 
 .item-selected-icon {
     background-position: -73px -1585px;
-    width: 24px;
-    height: 24px;
 }
 
 .mi-sidebar-icon-cash:hover::before {
@@ -116,13 +138,7 @@
 /*----- main page icon -----*/
 
 /*--- toolbar ---*/
-.mi-icon-20 {
-    width: 20px;
-    height: 20px;
-    min-width: 20px;
-    min-height: 20px;
-    padding: 2px;
-}
+
 
 .mi-toolbar-icon-search {
     background-position: -31px -1663px;
@@ -138,13 +154,7 @@
 }
 
 /*--- table ---*/
-.mi-icon-16 {
-    width: 16px;
-    height: 16px;
-    min-width: 16px;
-    min-height: 16px;
-    padding: 2px;
-}
+
 
 .mi-table-icon-dropdown {
     background-position: -896px -359px;
@@ -170,6 +180,7 @@
 .pre-page {
     background-position: -31px -357px;
 }
+
 .next-page {
     background-position: -76px -357px;
 }
@@ -223,18 +234,12 @@
     top: 37px;
     right: 10px;
     background-color: #fff;
-    /* border: 1px solid; */
+    border: 1px solid;
 }
 
 /*----- dialog -----*/
 
-.mi-icon-38 {
-    width: 38px;
-    height: 38px;
-    min-width: 36px;
-    min-height: 36px;
-    padding: 2px;
-}
+
 
 .dialog-icon {
     margin-right: 36px;
@@ -273,6 +278,7 @@
     margin-right: 10px;
     cursor: default;
 }
+
 .mi-toast-icon-success {
     background-position: -1602px -258px;
 }
@@ -288,6 +294,7 @@
 .mi-toast-icon-info {
     background-position: -762px -146px;
 }
+
 .mi-toast-icon-quit {
     background-position: -1177px -361px;
     position: relative;

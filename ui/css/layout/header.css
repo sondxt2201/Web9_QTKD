@@ -8,7 +8,7 @@
 }
 
 /*----- header left -----*/
-.header__left {
+.header-left {
     display: flex;
     width: 200px;
     background-color: #38393d;
@@ -16,13 +16,13 @@
     padding: 10px 0 10px 0;
 }
 
-.header__left-option {
+.header-left-option {
     background-position: -424px -88px;
     margin-right: 12px;
     margin: 0 16px 0 16px;
 }
 
-.header__left-logo {
+.header-left-logo {
     height: 32px;
     width: 96px;
     background-image: url("/assets/img/Logo_Module_TiengViet_White.66947422.svg");
@@ -34,7 +34,7 @@
 
 
 /*----- header right -----*/
-.header__right {
+.header-right {
     width: calc(100% - 200px);
     display: flex;
     justify-content: space-between;
@@ -43,20 +43,20 @@
     padding: 10px 16px 10px 16px;
 }
 
-.header__right-bars {
+.header-right-bars {
     background-position: -843px -30px;
     cursor: pointer;
     margin: 0 12px 0 0;
 }
 
-.header__right-company {
+.header-right-company {
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
 
-.header__right-brand {
+.header-right-brand {
     padding: 0 2px;
     text-transform: uppercase;
     font-size: 13px;
@@ -64,13 +64,13 @@
     font-weight: 600;
 }
 
-.header__right-drop-down {
+.header-right-drop-down {
     background-position: -1124px -357px;
     margin: 0 0 0 2px;
     cursor: pointer;
 }
 
-.header__right-user {
+.header-right-user {
     display: flex;
     align-items: center;
     /* padding-right: 24px; */
@@ -80,14 +80,14 @@
     font-weight: 600;
 }
 
-.user__dropdown {
+.user-dropdown {
     display: flex;
     width: 100%;
     align-items: center;
     text-align: center;
 }
 
-.user__avatar {
+.user-avatar {
     background-position: -350px -891px;
     border-radius: 50%;
     background-color: #e2e2e2;
@@ -98,8 +98,10 @@
     justify-content: space-between;
 }
 
-.user__name {
+.user-name {
     font-size: 13px;
     font-weight: 600;
     cursor: pointer;
+    text-decoration: none;
+    color: #000;
 }

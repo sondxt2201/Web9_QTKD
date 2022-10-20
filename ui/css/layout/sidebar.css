@@ -19,10 +19,6 @@
     margin-bottom: 4px;
 }
 
-.sidebar-item:first-child {
-    margin-top: 16px;
-}
-
 .sidebar-item:last-child {
     margin-bottom: 16px;
 }
@@ -48,7 +44,7 @@
     border-left: 8px solid #2c9f1c;
 }
 
-.sidebar-item__title {
+.sidebar-item-title {
     font-weight: 700;
     margin-left: 6px;
 }

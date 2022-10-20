@@ -8,10 +8,10 @@
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.5);
 
-    display: none;
+    /* display: none; */
 }
 
-.formEmployee__container {
+.formEmployee-container {
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@
 }
 
 /*--- header ---*/
-.formEmployee .container__header {
+.formEmployee .container-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,28 +33,28 @@
     padding: 32px 32px;
 }
 
-.formEmployee .container__header--left {
+.formEmployee .container-header--left {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 
 }
 
-.formEmployee .container__header__title {
+.formEmployee .container-header-title {
     font-weight: 700;
     font-size: 24px;
     padding-right: 24px;
 
 }
 
-.formEmployee .formEmployee__container .container__header__input {
+.formEmployee .formEmployee-container .container-header-input {
     display: flex;
     align-items: center;
     padding-right: 24px;
 }
 
 
-.formEmployee .container__header__input .checkbox-name {
+.formEmployee .container-header-input .checkbox-name {
     padding: 12px;
 }
 
@@ -62,7 +62,7 @@
     position: relative;
 }
 
-.container__header--right {
+.container-header--right {
     display: flex;
     position: relative;
 }
@@ -116,7 +116,7 @@
 
 /*--- body ---*/
 /*---not empty ---*/
-.formEmployee .container__body {
+.formEmployee .container-body {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -128,7 +128,7 @@
 }
 
 
-.formEmployee .container__body .input {
+.formEmployee .container-body .input {
     padding: 0 12px 0 10px;
 }
 
@@ -138,7 +138,7 @@
     /* margin-right: 12px; */
 }
 
-.info--notEmpty__info1 {
+.info--notEmpty-info1 {
     justify-content: space-between;
 }
 
@@ -151,8 +151,8 @@
     margin-left: 12px;
 }
 
-.info--optional .info--optional__info1,
-.info--optional .info--optional__info2 {
+.info--optional .info--optional-info1,
+.info--optional .info--optional-info2 {
     justify-content: space-between;
     width: 100%;
 }
@@ -183,7 +183,8 @@
 
 .form-group1 .form-control-employeecode.input.id-date,
 .form-group1 .form-control-employeecode.input.born-date {
-    padding-right: 36px
+    width: 100%;
+    padding-right: 32px;
 }
 
 .form-control-position.input {
@@ -216,7 +217,7 @@
 
 
 /*--- footer ---*/
-.formEmployee .container__footer {
+.formEmployee .container-footer {
     width: calc(100% - 64px);
     height: 100px;
     padding: 32px 0;
@@ -228,8 +229,8 @@
     box-sizing: border-box;
 }
 
-.formEmployee .container__footer .cancel.button,
-.formEmployee .container__footer .add-to-table.button, 
+.formEmployee .container-footer .cancel.button,
+.formEmployee .container-footer .add-to-table.button, 
 .cancel.button,
 .decline.button {
     background-color: #fff;
@@ -238,14 +239,14 @@
     margin-right: 12px
 }
 
-.formEmployee .container__footer .cancel.button:hover,
+.formEmployee .container-footer .cancel.button:hover,
 .cancel.button:hover,
 .decline.button:hover {
     border: 1px solid #73C663;
     color: #ccc;
 }
 
-.formEmployee .container__footer .add-to-table.button:hover {
+.formEmployee .container-footer .add-to-table.button:hover {
     border: 1px solid #73C663;
     color: #ccc;
 }
@@ -271,45 +272,43 @@
     right: 0px;
     width: 100%;
     height: 24px;
-    /* background-color: red; */
 }
 
 
-.datepicker__header {
+.datepicker-header {
     align-items: center;
     justify-content: space-between;
     height: 24px;
 }
-.datepicker__header-left {
+.datepicker-header-left {
     align-items: center;
 }
 
-.datepicker__header-title {
+.datepicker-header-title {
     font-weight: bolder;
     font-size: 16px;
 }
 
-.datepicker__navigation-button.pre-page {
+.datepicker-navigation-button.pre-page {
     margin-right: 8px
 }
 
-.datepicker__body {
+.datepicker-body {
     height: calc(100% - 72px);
     border: 1px solid;
     margin: 12px 0;
 }
 
 
-.datepicker__footer {
+.datepicker-footer {
     height: 48px;
     position: relative;
     align-items: center;
     justify-content: center;
     color: #409330;
     cursor: pointer;
-    /* border-top: 1px solid; */
 }
-.datepicker__footer::before {
+.datepicker-footer::before {
     content: "";
     position: absolute;
     border-top: 1px solid #73C663;

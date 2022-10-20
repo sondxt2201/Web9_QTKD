@@ -14,14 +14,23 @@
 }
 
 
-/* .button:focus,*/
-.button:hover { 
-    background-color: #73C663;
+.button:hover {
+    background-color: #96D58A;
     cursor: pointer;
 }
 
-.main-page__header-button {
+.button:focus {
+    background-color: #306F24;
+    cursor: pointer;
+}
+
+.main-page-header-button {
     color: #fff;
+}
+
+.cancel.button:focus {
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
 }
 
 /* .button.white-background {
@@ -33,7 +42,3 @@
 .button.white-background:hover{
     background-color: #ccc;
 } */
-
-
-
-

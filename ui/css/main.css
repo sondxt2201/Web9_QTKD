@@ -18,7 +18,7 @@
 }
 
 @media screen and (min-width: 2477px) {
-    .main-page__footer {
+    .main-page-footer {
         position: absolute;
         bottom: 0px;
         width: calc(100% - 18px);
@@ -30,7 +30,7 @@
         background-color: #fff;
         z-index: 2;
     }
-    
+
     .table-anchor-right {
         border-left: none;
     }
@@ -55,12 +55,13 @@
 
 ::-webkit-scrollbar {
     width: 10px;
-    height: 10px;
+    height: 6px;
 }
 
 ::-webkit-scrollbar-button {
     display: none;
 }
+
 ::-webkit-scrollbar-thumb {
     background: #b8bcc3;
 }
@@ -92,8 +93,7 @@ body {
 .main-app {
     position: absolute;
 }
- 
+
 .flex {
     display: flex;
 }
-

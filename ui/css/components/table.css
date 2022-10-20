@@ -1,12 +1,11 @@
 .table {
     width: 100%;
     border-spacing: 0;
-    /* position: relative; */
 }
 
-.content__table {
-    margin: 0px 6px 0px 16px;
-    height: calc(100vh - 200px);
+.content-table {
+    /* margin: 0px 6px 0px 16px; */
+    height: calc(100vh - 256px);
     overflow: auto;
 }
 
@@ -36,13 +35,41 @@ th {
     border-right: 1px solid #c7c7c7;
 }
 
+.content-table .column-tiny-width {
+    min-width: 48px;
+    width: 48px;
+}
+
+.content-table .column-small-width {
+    min-width: 120px;
+    width: 120px;
+}
+
+.content-table .column-medium-width {
+    min-width: 150px;
+    width: 150px
+}
+
+.content-table .column-big-width {
+    min-width: 200px;
+    width: 200px
+}
+
+.content-table .column-large-width {
+    min-width: 250px;
+    width: 250px;
+}
+
+
+
+
 
 /* anchor column */
-.table-anchor-left {
+/* .table-anchor-left {
     left: 0;
     top: 0;
     position: sticky;
-}
+} */
 
 .table-anchor-right {
     top: 0;
@@ -52,15 +79,15 @@ th {
     border-right: none;
 }
 
-thead .table-anchor-left,
+/* thead .table-anchor-left, */
 thead .table-anchor-right {
     z-index: 3;
     top: 0;
     background-color: #e5e8ec;
 }
 
-tbody .table-anchor-right,
-tbody .table-anchor-left {
+/* tbody .table-anchor-left  */
+tbody .table-anchor-right {
     background-color: #fff;
 }
 
@@ -68,7 +95,7 @@ tbody tr:hover {
     background-color: #d1e5f6;
 }
 
-tbody tr:hover .table-anchor-left,
+/* tbody tr:hover .table-anchor-left, */
 tbody tr:hover .table-anchor-right {
     background-color: #d1e5f6;
 }
@@ -77,15 +104,15 @@ tbody tr:hover .table-anchor-right {
     padding: 0;
 }
 
-.text__align--left {
+.text-align--left {
     text-align: left;
 }
 
-.text__align--center {
+.text-align--center {
     text-align: center;
 }
 
-.text__align--right {
+.text-align--right {
     text-align: right;
 }
 
@@ -94,29 +121,30 @@ tbody tr:hover .table-anchor-right {
 }
 
 
-.table__combobox {
+.table-combobox {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.table__combobox__title {
+.table-combobox-title {
     border: none;
     width: 36px;
     height: 22px;
     color: #0075c0;
     font-size: 14px;
     font-weight: 600;
-    text-decoration: none;    
+    text-decoration: none;
     background-color: unset;
 
 }
-.table__combobox__title:hover,
-.table__combobox__title:focus {
+
+.table-combobox-title:hover,
+.table-combobox-title:focus {
     background-color: unset;
 }
 
-.table__combobox__dropdown {
+.table-combobox-dropdown {
     padding: 8px 10px;
     position: relative;
 }
@@ -124,6 +152,3 @@ tbody tr:hover .table-anchor-right {
 .no-right-border {
     border-right: none;
 }
-
-
-
