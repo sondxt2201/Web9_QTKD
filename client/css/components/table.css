@@ -1,0 +1,156 @@
+.table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.content-table {
+    /* margin: 0px 6px 0px 16px; */
+    height: calc(100vh - 256px);
+    overflow: auto;
+}
+
+table thead {
+    top: 0;
+    position: sticky;
+    z-index: 1;
+}
+
+table thead tr {
+    height: 48px;
+    background-color: #e5e8ec;
+    font-size: 14px;
+}
+
+table tbody tr {
+    height: 48px;
+    font-size: 14px;
+    padding-left: 12px;
+
+}
+
+table tbody tr td,
+th {
+    padding-left: 16px;
+    border-bottom: 1px solid #c7c7c7;
+    border-right: 1px solid #c7c7c7;
+}
+
+.content-table .column-tiny-width {
+    min-width: 48px;
+    width: 48px;
+}
+
+.content-table .column-small-width {
+    min-width: 120px;
+    width: 120px;
+}
+
+.content-table .column-medium-width {
+    min-width: 150px;
+    width: 150px
+}
+
+.content-table .column-big-width {
+    min-width: 200px;
+    width: 200px
+}
+
+.content-table .column-large-width {
+    min-width: 250px;
+    width: 250px;
+}
+
+
+
+
+
+/* anchor column */
+/* .table-anchor-left {
+    left: 0;
+    top: 0;
+    position: sticky;
+} */
+
+.table-anchor-right {
+    top: 0;
+    right: 0;
+    position: sticky;
+    border-left: 1px solid #c7c7c7;
+    border-right: none;
+}
+
+/* thead .table-anchor-left, */
+thead .table-anchor-right {
+    z-index: 3;
+    top: 0;
+    background-color: #e5e8ec;
+}
+
+/* tbody .table-anchor-left  */
+tbody .table-anchor-right {
+    background-color: #fff;
+}
+
+tbody tr:hover {
+    background-color: #d1e5f6;
+}
+
+/* tbody tr:hover .table-anchor-left, */
+tbody tr:hover .table-anchor-right {
+    background-color: #d1e5f6;
+}
+
+.no_padding {
+    padding: 0;
+}
+
+.text-align--left {
+    text-align: left;
+}
+
+.text-align--center {
+    text-align: center;
+}
+
+.text-align--right {
+    text-align: right;
+}
+
+.justify-left {
+    text-align: left;
+}
+
+
+.table-combobox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-combobox-title {
+    border: none;
+    width: 36px;
+    height: 22px;
+    color: #0075c0;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: unset;
+
+}
+
+.table-combobox-title:hover,
+.table-combobox-title:focus {
+    background-color: unset;
+}
+
+.table-combobox-dropdown {
+    padding: 8px 10px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.no-right-border {
+    border-right: none;
+}

@@ -1,0 +1,25 @@
+.loading-wrapper {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+}
+
+.loading-icon {
+    background: url(../../assets/loading.svg) no-repeat;
+    background-size: 75px 75px;
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    animation: spin 1s linear infinite;
+    background-position: center;
+
+}

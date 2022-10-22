@@ -1,0 +1,44 @@
+.button {
+    min-width: 80px;
+    height: 36px;
+    border-radius: 4px;
+    background: #409330;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    padding: 0 16px 0 16px;
+    border: none;
+    font-weight: bolder;
+
+}
+
+
+.button:hover {
+    background-color: #96D58A;
+    cursor: pointer;
+}
+
+.button:focus {
+    background-color: #306F24;
+    cursor: pointer;
+}
+
+.main-page-header-button {
+    color: #fff;
+}
+
+.cancel.button:focus {
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+/* .button.white-background {
+    background-color: #fff;
+    border: 1px solid black;
+    color: black;    
+}
+
+.button.white-background:hover{
+    background-color: #ccc;
+} */

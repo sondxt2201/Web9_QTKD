@@ -1,0 +1,110 @@
+@import url("../css/components/icon.css");
+@import url("../css/components/button.css");
+@import url("../css/components/input.css");
+@import url("../css/components/dialog.css");
+@import url("../css/components/combobox.css");
+@import url("../css/components/toastmessage.css");
+@import url("../css/components/table.css");
+@import url("../css/components/grid.css");
+@import url("../css/layout/header.css");
+@import url("../css/layout/container.css");
+@import url("../css/layout/sidebar.css");
+@import url("../css/layout/content.css");
+@import url("../css/layout/formEmployee.css");
+@import url("../css/components/loading.css");
+
+
+@font-face {
+    font-family: notosans;
+    src: url(../assets/fonts/notosans-regular.2cb88a13.woff2);
+}
+
+@media screen and (min-width: 2477px) {
+    .main-page-footer {
+        position: absolute;
+        bottom: 0px;
+        width: calc(100% - 18px);
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px;
+        background-color: #fff;
+        z-index: 2;
+    }
+
+    .table-anchor-right {
+        border-left: none;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b8bcc3;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+html {
+    font-size: 13px;
+    line-height: 1.6rem;
+    font-family: notosans;
+    box-sizing: border-box;
+    font-weight: 400;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: notosans;
+    font-size: 14px;
+    margin: 0;
+    /* min-width: 1024px; */
+    background: #f4f5f8;
+    color: #111111;
+}
+
+.main-app {
+    position: absolute;
+}
+
+.flex {
+    display: flex;
+}

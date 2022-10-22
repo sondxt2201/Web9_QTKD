@@ -1,0 +1,303 @@
+.mi-icon {
+    background: url('/assets/img/Sprites.64af8f61.svg') no-repeat;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.mi-icon-tiny {
+    width: 14px;
+    height: 14px;
+    min-width: 14px;
+    min-height: 14px;
+    padding: 2px;
+}
+
+.mi-icon-small {
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    min-height: 16px;
+    padding: 2px;
+}
+
+.mi-icon-medium {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+    padding: 2px;
+}
+
+.mi-icon-big {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    min-height: 24px;
+    padding: 2px;
+    margin-right: 10px;
+}
+
+.mi-icon-large {
+    width: 38px;
+    height: 38px;
+    min-width: 36px;
+    min-height: 36px;
+    padding: 2px;
+}
+
+/*----- header icon -----*/
+
+
+.mi-header-icon-bell {
+    background-position: -787px -30px;
+    cursor: pointer;
+    margin: 0 12px 0 0;
+}
+
+.mi-user-icon-drop-down {
+    background-position: -1797px -473px;
+    margin-left: 2px;
+    cursor: pointer;
+
+}
+
+
+
+/*----- sidebar icon -----*/
+.mi-sidebar-icon-dashboard {
+    background-position: -30px -1628px;
+}
+
+.mi-sidebar-icon-cash {
+    background-position: -73px -1628px;
+}
+
+.item-selected-icon {
+    background-position: -73px -1585px;
+}
+
+.mi-sidebar-icon-cash:hover::before {
+    background-color: #fff;
+}
+
+.mi-sidebar-icon-bank {
+    background-position: -117px -1628px;
+}
+
+.mi-sidebar-icon-pu {
+    background-position: -161px -1628px;
+}
+
+.mi-sidebar-icon-sale {
+    background-position: -204px -1628px;
+}
+
+.mi-sidebar-icon-invoice {
+    background-position: -249px -1628px;
+}
+
+.mi-sidebar-icon-stock {
+    background-position: -291px -1628px;
+}
+
+.mi-sidebar-icon-tools {
+    background-position: -336px -1628px;
+}
+
+.mi-sidebar-icon-fixed-assets {
+    background-position: -378px -1630px;
+}
+
+.mi-sidebar-icon-tax {
+    background-position: -423px -1630px;
+}
+
+.mi-sidebar-icon-price {
+    background-position: -467px -1628px;
+}
+
+.mi-sidebar-icon-general {
+    background-position: -510px -1628px;
+}
+
+.mi-sidebar-icon-budget {
+    background-position: -378px -1659px;
+}
+
+.mi-sidebar-icon-report {
+    background-position: -547px -1628px;
+}
+
+.mi-sidebar-icon-finance {
+    background-position: -204px -1664px;
+}
+
+
+
+/*----- main page icon -----*/
+
+/*--- toolbar ---*/
+
+
+.mi-toolbar-icon-search {
+    background-position: -31px -1663px;
+    position: relative;
+    right: 30px;
+    border: none;
+}
+
+.mi-toolbar-icon-refresh {
+    background-position: -1097px -89px;
+    border: none;
+    margin: 0;
+}
+
+/*--- table ---*/
+
+
+.mi-table-icon-dropdown {
+    background-position: -896px -359px;
+    position: absolute;
+    right: 18px;
+    top: 0px;
+    border: none;
+}
+
+/*--- footer --- */
+.mi-footer-icon-dropdown {
+    background-position: -561px -360px;
+    position: absolute;
+    right: 29px;
+    top: 22px;
+}
+
+/*--- paging navigation ---*/
+.pre-page.disabled {
+    background-position: -30px -405px;
+}
+
+.pre-page {
+    background-position: -31px -357px;
+}
+
+.next-page {
+    background-position: -76px -357px;
+}
+
+
+/*----- add employee form -----*/
+
+.mi-form-icon-help {
+    background-position: -89px -144px;
+    margin: 0;
+    position: relative;
+    top: -24px;
+    right: -8px;
+}
+
+.mi-form-icon-escape {
+    background-position: -144px -144px;
+    margin: 0;
+    position: relative;
+    top: -24px;
+    right: -20px;
+
+}
+
+.mi-form-icon-dropdown {
+    background-position: -358px -349px;
+    position: absolute;
+    width: 34px;
+    height: 34.2px;
+    right: 1px;
+    top: 27.6px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    outline: none;
+    border: none;
+}
+
+.mi-icon.mi-form-icon-dropdown:hover {
+    background-color: #e0e0e0;
+}
+
+/* .mi-icon.mi-form-icon-dropdown:active {
+    transform: rotate(180deg);
+    transition: all 0.1s ease;
+} */
+
+
+.mi-form-icon-calender {
+    background-position: -128px -312px;
+    position: absolute;
+    top: 37px;
+    right: 10px;
+    background-color: #fff;
+    border: 1px solid;
+}
+
+/*----- dialog -----*/
+
+
+
+.dialog-icon {
+    margin-right: 36px;
+    cursor: default;
+}
+
+.mi-dialog-icon-warning {
+    background-position: -752px -462px;
+    /* border: 1px solid; */
+}
+
+.mi-dialog-icon-error {
+    background-position: -598px -463px;
+    /* border: 1px solid; */
+}
+
+.mi-dialog-icon-deleterequest {
+    background-position: -598px -463px;
+}
+
+.mi-dialog-icon-saverequest {
+    background-position: -672px -462px;
+}
+
+
+/*----- date picker -----*/
+.mi-datepicker-icon-dropdown {
+    background-position: -1797px -473px;
+    margin-left: 3px;
+}
+
+
+
+/*----- toast message -----*/
+.toast-icon {
+    margin-right: 10px;
+    cursor: default;
+}
+
+.mi-toast-icon-success {
+    background-position: -1602px -258px;
+}
+
+.mi-toast-icon-error {
+    background-position: -1189px -515px;
+}
+
+.mi-toast-icon-warning {
+    background-position: -817px -145px;
+}
+
+.mi-toast-icon-info {
+    background-position: -762px -146px;
+}
+
+.mi-toast-icon-quit {
+    background-position: -1177px -361px;
+    position: relative;
+    top: 1px;
+    margin-left: 16px;
+}

@@ -1,0 +1,326 @@
+.formEmployee {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: none;
+}
+
+.formEmployee-container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    width: 900px;
+    height: 700px;
+    box-sizing: border-box;
+
+    z-index: 3;
+}
+
+/*--- header ---*/
+.formEmployee .container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 96px;
+    /* width: 100%; */
+    padding: 32px 32px;
+}
+
+.formEmployee .container-header--left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.formEmployee .container-header-title {
+    font-weight: 700;
+    font-size: 24px;
+    padding-right: 24px;
+
+}
+
+.formEmployee .formEmployee-container .container-header-input {
+    display: flex;
+    align-items: center;
+    padding-right: 31px;
+}
+
+
+.formEmployee .container-header-input .checkbox-name {
+    padding: 12px;
+}
+
+.formEmployee .checkbox-wrap {
+    position: relative;
+}
+
+.container-header--right {
+    display: flex;
+    position: relative;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    margin: 0 0 16px 12px;
+    margin-left: 3px;
+    justify-content: space-between;
+}
+
+.form-group-small {
+    display: flex;
+    flex-direction: column;
+    width: calc(40% - 12px);
+    position: relative;
+    margin: 0 0 16px 12px;
+
+}
+
+.form-group-big {
+    display: flex;
+    flex-direction: column;
+    width: calc(60% - 12px);
+    position: relative;
+    margin: 0 0 16px 12px;
+}
+
+.form-group-large {
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.form-group-medium {
+    flex-direction: column;
+    margin: 0 23px 16px 0px;
+}
+
+.form-label {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 0 6px 6px 0;
+}
+
+.form-message {
+    color: red;
+}
+
+/*--- body ---*/
+/*---not empty ---*/
+.formEmployee .container-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 32px 32px 32px;
+}
+
+.formEmployee .body--basic-info {
+    width: 100%;
+}
+
+
+.formEmployee .container-body .input {
+    padding: 0 12px 0 10px;
+}
+
+
+.formEmployee .info--notEmpty {
+    width: 50%;
+    /* margin-right: 12px; */
+}
+
+.info--notEmpty-top {
+    justify-content: space-between;
+}
+
+
+/*---*/
+/*---*/
+/*--- optional info */
+.formEmployee .info--optional {
+    width: 50%;
+    margin-left: 12px;
+}
+
+.info--optional .info--optional-top,
+.info--optional .info--optional-middle {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form-label--gender {
+    padding-left: 14px;
+}
+
+.gender-option {
+    width: calc(50% - 12px);
+    flex-direction: row;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.gender-select {
+    width: calc(100% - 12px);
+    align-items: center;
+}
+
+.male {
+    padding-left: 12px;
+}
+
+.female {
+    padding-left: 12px;
+}
+
+.form-group-small .form-control-employee.input.id-date,
+.form-group-small .form-control-employee.input.born-date {
+    width: 100%;
+    padding-right: 32px;
+}
+
+.form-control-position.input {
+    margin-right: 0;
+
+}
+
+.no-left {
+    margin-left: 0;
+    /* margin-right: 12px */
+}
+
+/*---*/
+/*---*/
+/*--- contact-info ---*/
+.formEmployee .body--contact-info {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.contact-info-top {
+    width: 100%;
+}
+
+.contact-info-middle {
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/*--- footer ---*/
+.formEmployee .container-footer {
+    width: calc(100% - 64px);
+    height: 100px;
+    padding: 32px 0;
+    margin: 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid;
+    box-sizing: border-box;
+}
+
+.formEmployee .container-footer .cancel.button,
+.formEmployee .container-footer .add-to-table.button, 
+.cancel.button,
+.decline.button {
+    background-color: #fff;
+    border: 1px solid #409330;
+    color: #000;
+    margin-right: 12px
+}
+
+.formEmployee .container-footer .cancel.button:hover,
+.cancel.button:hover,
+.decline.button:hover {
+    border: 1px solid #73C663;
+    color: #ccc;
+}
+
+.formEmployee .container-footer .add-to-table.button:hover {
+    border: 1px solid #73C663;
+    color: #ccc;
+}
+
+
+/*--- date-picker ---*/
+.datepicker {
+    background-color: #fff;
+    z-index: 10;
+    border: 1px solid;
+    position: absolute;
+    right: 0px;
+    width: 200%;
+    height: 322px;
+    padding: 24px;
+    border-radius: 4px;
+    display: none;
+}
+.datepicker::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: 0px;
+    width: 100%;
+    height: 24px;
+}
+
+
+.datepicker-header {
+    align-items: center;
+    justify-content: space-between;
+    height: 24px;
+}
+.datepicker-header-left {
+    align-items: center;
+}
+
+.datepicker-header-title {
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.datepicker-navigation-button.pre-page {
+    margin-right: 8px
+}
+
+.datepicker-body {
+    height: calc(100% - 72px);
+    border: 1px solid;
+    margin: 12px 0;
+}
+
+
+.datepicker-footer {
+    height: 48px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    color: #409330;
+    cursor: pointer;
+}
+.datepicker-footer::before {
+    content: "";
+    position: absolute;
+    border-top: 1px solid #73C663;
+    bottom: 47px;
+    width: 119%;
+}
+
+
+.datepicker-wrapper:hover  .datepicker {
+    display: block;
+    animation: fadein ease-in 0.1s;
+}
