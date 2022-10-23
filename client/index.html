@@ -176,9 +176,9 @@
                         <!--  -->
 
                         <!-- table body -->
-                        <tbody>
+                        <tbody id="Data">
 
-                            <tr>
+                            <!-- <tr>
                                 <td data-type="EmployeeCode" class="text-align--center no_padding column-tiny-width">
                                     <input type="checkbox">
                                 </td>
@@ -191,7 +191,7 @@
                                 <td class="text-align--left column-large-width">Nhóm kiểm hàng</td>
                                 <td class="text-align--left column-medium-width">Số tài khoản</td>
                                 <td class="text-align--left column-large-width">Tên ngân hàng</td>
-                                <td class="text-align--left no-right-border olumn-large-width">Chi nhánh TKngân hàng
+                                <td class="text-align--left no-right-border column-large-width">Chi nhánh TK ngân hàng
                                 </td>
                                 <td class="text-align--center no_padding table-anchor-right column-small-width">
                                     <div class="table-combobox combobox">
@@ -208,71 +208,7 @@
                                         </div>
                                     </div>
                                 </td>
-                            </tr>
-
-                            <tr>
-                                <td data-type="EmployeeCode" class="text-align--center no_padding column-tiny-width">
-                                    <input type="checkbox">
-                                </td>
-                                <td class="text-align--left column-medium-width">123456</td>
-                                <td class="text-align--left column-large-width">Nguyễn Văn A</td>
-                                <td class="text-align--left column-small-width">Nam</td>
-                                <td class="text-align--center no_padding column-medium-width">01/01/1999</td>
-                                <td class="text-align--left column-big-width">123456789876</td>
-                                <td class="text-align--left column-large-width">Nhân viên</td>
-                                <td class="text-align--left column-large-width">Nhóm kiểm hàng</td>
-                                <td class="text-align--left column-medium-width">Số tài khoản</td>
-                                <td class="text-align--left column-large-width">Tên ngân hàng</td>
-                                <td class="text-align--left no-right-border olumn-large-width">Chi nhánh TKngân hàng
-                                </td>
-                                <td class="text-align--center no_padding table-anchor-right column-small-width">
-                                    <div class="table-combobox combobox">
-                                        <button href="" class="table-combobox-title button">Sửa</button>
-                                        <div class="table-combobox-dropdown">
-                                            <button class="mi-icon mi-icon-small mi-table-icon-dropdown"></button>
-                                            <div class="table-combobox-dropdown-option">
-                                                <ul class="table-option-list">
-                                                    <li class="duplicate-option">Nhân bản</li>
-                                                    <li class="delete-option">Xoá</li>
-                                                    <li class="disable-option">Ngưng sử dụng</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td data-type="EmployeeCode" class="text-align--center no_padding column-tiny-width">
-                                    <input type="checkbox">
-                                </td>
-                                <td class="text-align--left column-medium-width">123456</td>
-                                <td class="text-align--left column-large-width">Nguyễn Văn A</td>
-                                <td class="text-align--left column-small-width">Nam</td>
-                                <td class="text-align--center no_padding column-medium-width">01/01/1999</td>
-                                <td class="text-align--left column-big-width">123456789876</td>
-                                <td class="text-align--left column-large-width">Nhân viên</td>
-                                <td class="text-align--left column-large-width">Nhóm kiểm hàng</td>
-                                <td class="text-align--left column-medium-width">Số tài khoản</td>
-                                <td class="text-align--left column-large-width">Tên ngân hàng</td>
-                                <td class="text-align--left no-right-border olumn-large-width">Chi nhánh TKngân hàng
-                                </td>
-                                <td class="text-align--center no_padding table-anchor-right column-small-width">
-                                    <div class="table-combobox combobox">
-                                        <button href="" class="table-combobox-title button">Sửa</button>
-                                        <div class="table-combobox-dropdown">
-                                            <button class="mi-icon mi-icon-small mi-table-icon-dropdown"></button>
-                                            <div class="table-combobox-dropdown-option">
-                                                <ul class="table-option-list">
-                                                    <li class="duplicate-option">Nhân bản</li>
-                                                    <li class="delete-option">Xoá</li>
-                                                    <li class="disable-option">Ngưng sử dụng</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
+                            </tr> -->
 
                         </tbody>
                         <!--  -->
@@ -340,7 +276,7 @@
 
                 <div class="container-header--right">
                     <div class="mi-form-icon-help mi-icon mi-icon-big"></div>
-                    <div id="btnEsc" class="mi-form-icon-escape mi-icon mi-icon-big"></div>
+                    <div class="mi-form-icon-escape mi-icon mi-icon-big btnEsc"></div>
                 </div>
             </div>
 
@@ -371,7 +307,7 @@
                                     <label for="department" class="form-label department">Đơn vị</label>
                                     <span class="form-message">*</span>
                                 </div>
-                                <input type="text" name="name" id="txtdepartment" class="form-control-department input">
+                                <input type="text" name="name" id="txtDepartment" class="form-control-department input">
                                 <button class="mi-icon mi-form-icon-dropdown"></button>
                             </div>
 
@@ -389,7 +325,10 @@
                                 <label for="" class="form-label date-Of-Birth">Ngày sinh</label>
 
                                 <div class="datepicker-wrapper">
-                                    <input type="date" name="" id="" class="form-control-employee input born-date">
+                                    <!-- <input type="date" name="" id="placeholder" class="form-control-employee input born-date" > -->
+                                    <!-- <div class="mi-form-icon-calender mi-icon mi-icon-small" onfocus="(this.display='none')"></div> -->
+                                    <input type="text" placeholder="Ngày/Tháng/Năm" class="form-control-employee input born-date"
+                                    onfocus="(this.type='date')" id="txtDateOfBirth">
                                 </div>
                             </div>
 
@@ -414,15 +353,18 @@
                             <div class="form-group-big flex no-left">
                                 <label for="" class="form-label idNumber">
                                     Số CMND
-                                    <!-- <span class="form-message">*</span> -->
+                                    <span class="form-message">*</span>
                                 </label>
-                                <input type="text" name="name" id="" class="form-control-employee input ">
+                                <input type="text" name="name" id="txtIDNumber" class="form-control-employee input ">
                             </div>
 
                             <div class="form-group-small flex">
                                 <label for="id-date" class="form-label form-label--id-date">Ngày cấp</label>
                                 <div class="datepicker-wrapper">
-                                    <input type="date" name="" id="" class="form-control-employee input born-date">
+                                    <!-- <input type="date" name="" id="" class="form-control-employee input born-date"> -->
+                                    <!-- <div class="mi-form-icon-calender mi-icon mi-icon-small"></div> -->
+                                    <input type="text" placeholder="Ngày/Tháng/Năm" class="form-control-employee input born-date"
+                                    onfocus="(this.type='date')">
                                 </div>
                             </div>
                         </div>
@@ -450,7 +392,7 @@
                         <div class="contact-info-middle--phone flex">
                             <div class="form-group-medium flex">
                                 <label for="cellphone" class="form-label cellphone">ĐT di động</label>
-                                <input type="text" name="name" id="" class="form-control-contact input"
+                                <input type="text" name="name" id="txtPhoneNumber" class="form-control-contact input"
                                     placeholder="0912-345-678">
                                 <!-- <span class="form-message"></span> -->
                             </div>
@@ -464,7 +406,7 @@
 
                             <div class="form-group-medium flex">
                                 <label for="email" class="form-label email">Email</label>
-                                <input type="text" name="name" id="" class="form-control-contact input"
+                                <input type="text" name="name" id="txtEmail" class="form-control-contact input"
                                     placeholder="abc@def.com">
                                 <!-- <span class="form-message"></span> -->
                             </div>
@@ -475,21 +417,18 @@
                                 <label for="bank-account" class="form-label bank-account">Tài khoản ngân hàng</label>
                                 <input type="text" name="name" id="" class="form-control-contact input"
                                     placeholder="19024-70518-3012">
-                                <!-- <span class="form-message"></span> -->
                             </div>
 
                             <div class="form-group-medium flex">
                                 <label for="bank-name" class="form-label bank-name">Tên ngân hàng</label>
                                 <input type="text" name="name" id="" class="form-control-contact input"
                                     placeholder="Techcombank">
-                                <!-- <span class="form-message"></span> -->
                             </div>
 
                             <div class="form-group-medium flex">
                                 <label for="bank-address" class="form-label bank-address">Chi nhánh</label>
                                 <input type="text" name="name" id="" class="form-control-contact input"
                                     placeholder="Hàng Đậu">
-                                <!-- <span class="form-message"></span> -->
                             </div>
                         </div>
 
@@ -498,7 +437,7 @@
             </div>
 
             <div class="container-footer">
-                <button class="cancel button">
+                <button class="cancel button btnEsc" >
                     Huỷ
                 </button>
                 <div class="add-employee">
@@ -518,18 +457,6 @@
     <!-- dialog -->
     <div class="dialog-wrapper" id="dialog-wrapper">
 
-        <div class="dialog-warning" id="dialog-warning-fullName">
-            <div class="dialog-body flex">
-                <div class="mi-icon mi-icon-large dialog-icon mi-dialog-icon-warning"></div>
-                <div class="dialog-content">
-                    Tên không được để trống
-                </div>
-            </div>
-            <div class="dialog-footer flex">
-                <button class="close-button button" id="btnEsc">Đóng</button>
-            </div>
-        </div>
-
         <div class="dialog-warning" id="dialog-warning-employeeCode">
             <div class="dialog-body flex">
                 <div class="mi-icon mi-icon-large dialog-icon mi-dialog-icon-warning"></div>
@@ -538,9 +465,108 @@
                 </div>
             </div>
             <div class="dialog-footer flex">
-                <button class="close-button button" id="btnEsc1">Đóng</button>
+                <button class="close-button button dlg-btnEsc">Đóng</button>
             </div>
         </div>
+
+        <div class="dialog-warning" id="dialog-warning-fullName">
+            <div class="dialog-body flex">
+                <div class="mi-icon mi-icon-large dialog-icon mi-dialog-icon-warning"></div>
+                <div class="dialog-content">
+                    Tên không được để trống
+                </div>
+            </div>
+            <div class="dialog-footer flex">
+                <button class="close-button button dlg-btnEsc">Đóng</button>
+            </div>
+        </div>
+
+        <div class="dialog-warning" id="dialog-warning-required">
+            <div class="dialog-body flex">
+                <div class="mi-icon mi-icon-large dialog-icon mi-dialog-icon-warning"></div>
+                <div class="dialog-content">
+                    Tên và mã nhân viên không được để trống
+                </div>
+            </div>
+            <div class="dialog-footer flex">
+                <button class="close-button button dlg-btnEsc">Đóng</button>
+            </div>
+        </div>
+
+        <div class="dialog-warning" id="dialog-warning-dob">
+            <div class="dialog-body flex">
+                <div class="mi-icon mi-icon-large dialog-icon mi-dialog-icon-warning"></div>
+                <div class="dialog-content">
+                    Ngày sinh không được lớn hơn ngày hiện tại
+                </div>
+            </div>
+            <div class="dialog-footer flex">
+                <button class="close-button button dlg-btnEsc">Đóng</button>
+            </div>
+        </div>
+
+        <div class="dialog-warning" id="dialog-warning-idNumber">
+            <div class="dialog-body flex">
+                <div class="mi-icon mi-icon-large dialog-icon mi-dialog-icon-warning"></div>
+                <div class="dialog-content">
+                    Số CMND không được để trống
+                </div>
+            </div>
+            <div class="dialog-footer flex">
+                <button class="close-button button dlg-btnEsc">Đóng</button>
+            </div>
+        </div>
+
+        <div class="dialog-warning" id="dialog-warning-department">
+            <div class="dialog-body flex">
+                <div class="mi-icon mi-icon-large dialog-icon mi-dialog-icon-warning"></div>
+                <div class="dialog-content">
+                    Đơn vị không được để trống
+                </div>
+            </div>
+            <div class="dialog-footer flex">
+                <button class="close-button button dlg-btnEsc">Đóng</button>
+            </div>
+        </div>
+
+        <div class="dialog-warning" id="dialog-warning-required">
+            <div class="dialog-body flex">
+                <div class="mi-icon mi-icon-large dialog-icon mi-dialog-icon-warning"></div>
+                <div class="dialog-content">
+                    Tên và mã nhân viên không được để trống
+                </div>
+            </div>
+            <div class="dialog-footer flex">
+                <button class="close-button button dlg-btnEsc">Đóng</button>
+            </div>
+        </div>
+
+        <div class="dialog-warning" id="dialog-warning-phone">
+            <div class="dialog-body flex">
+                <div class="mi-icon mi-icon-large dialog-icon mi-dialog-icon-warning"></div>
+                <div class="dialog-content">
+                    Số điện thoại vừa nhập sai định dạng, vui lòng nhập lại
+                </div>
+            </div>
+            <div class="dialog-footer flex">
+                <button class="close-button button dlg-btnEsc">Đóng</button>
+            </div>
+        </div>
+
+        <div class="dialog-warning" id="dialog-warning-email">
+            <div class="dialog-body flex">
+                <div class="mi-icon mi-icon-large dialog-icon mi-dialog-icon-warning"></div>
+                <div class="dialog-content">
+                    Email vừa nhập sai định dạng, vui lòng nhập lại
+                </div>
+            </div>
+            <div class="dialog-footer flex">
+                <button class="close-button button dlg-btnEsc">Đóng</button>
+            </div>
+        </div>
+
+
+
 
         <div class="dialog-error">
             <div class="dialog-body flex">
@@ -550,7 +576,7 @@
                 </div>
             </div>
             <div class="dialog-footer flex">
-                <button class="close-button button">Đóng</button>
+                <button class="close-button button dlg-btnEsc">Đóng</button>
             </div>
         </div>
 
@@ -576,7 +602,7 @@
                 </div>
             </div>
             <div class="dialog-footer flex">
-                <button class="cancel button">Huỷ</button>
+                <button class="cancel button dlg-btnEsc" >Huỷ</button>
                 <div class="dialog-footer-right flex">
                     <button class="decline button">Không</button>
                     <button class="accept-button button">Có</button>
@@ -649,8 +675,10 @@
 
 
     <!-- <script src="./js/main.js"></script> -->
-    <script type="module" src="./js/table.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./js/table1.js"></script>
     <script type="module" src="./js/formEmployee.js"></script>
+
 </body>
 
 </html>

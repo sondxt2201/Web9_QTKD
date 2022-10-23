@@ -7,6 +7,7 @@
     left: 0;
     z-index: 5;
     background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
 
     display: none;
 }
@@ -24,7 +25,8 @@
     box-sizing: border-box;
     padding: 24px;
     overflow: auto;
-
+    margin-bottom: 6px;
+    margin-top: 6px;
     z-index: 15;
     display: none;
 

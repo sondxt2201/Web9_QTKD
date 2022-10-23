@@ -187,7 +187,7 @@
 .form-group-small .form-control-employee.input.id-date,
 .form-group-small .form-control-employee.input.born-date {
     width: 100%;
-    padding-right: 32px;
+    /* padding-right: 32px; */
 }
 
 .form-control-position.input {
