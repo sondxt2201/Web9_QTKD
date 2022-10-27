@@ -35,7 +35,7 @@ input[type='checkbox'] {
 
 input[type='checkbox']:checked {
 	border: 1px solid #089740;
-	background: url('/assets/img/Sprites.64af8f61.svg') no-repeat -1221px -357px;
+	background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -1221px -357px;
 	transition: all .1s ease;
 }
 

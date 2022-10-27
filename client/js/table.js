@@ -10,6 +10,7 @@ async function loadData() {
         $('#loading').show();
         let data = await axios.get('https://amis.manhnv.net/api/v1/Employees')
             .then(function (response) {
+                // console.log(response.data);
                 // Duyệt từng đối tượng  trong mảng
                 for (const employee of response.data) {
                     // Khai báo dữ liệu
@@ -46,34 +47,34 @@ async function loadData() {
                     }
 
                     // Định dạng dữ liệu trên bảng
-                    try {
-                        if (!position) {
-                            position = " ";
-                        } else {
-                            position = this.position;
-                        }
+                    // try {
+                    //     if (!position) {
+                    //         position = " ";
+                    //     } else {
+                    //         position = this.position;
+                    //     }
 
-                        if (!bankNumber) {
-                            bankNumber = " ";
-                        } else {
-                            bankNumber = employee.BankAccountNumber;
-                        }
+                    //     if (!bankNumber) {
+                    //         bankNumber = " ";
+                    //     } else {
+                    //         bankNumber = employee.BankAccountNumber;
+                    //     }
 
-                        if (!bankName) {
-                            bankName = " ";
-                        } else {
-                            bankName = employee.BankName;
-                        }
+                    //     if (!bankName) {
+                    //         bankName = " ";
+                    //     } else {
+                    //         bankName = employee.BankName;
+                    //     }
 
-                        if (!bankBranch) {
-                            bankBranch = " ";
-                        } else {
-                            bankBranch = employee.BankBranchName;
-                        }
+                    //     if (!bankBranch) {
+                    //         bankBranch = " ";
+                    //     } else {
+                    //         bankBranch = employee.BankBranchName;
+                    //     }
 
-                    } catch (error) {
-                        console.log(error)
-                    }
+                    // } catch (error) {
+                    //     console.log(error)
+                    // }
 
                     // Tạo chuỗi HTML
                     var tableData =  `
@@ -84,13 +85,13 @@ async function loadData() {
                             <td class="text-align--left column-medium-width">${employeeCode}</td>
                             <td class="text-align--left column-large-width">${fullName}</td>
                             <td class="text-align--left column-small-width">${gender === 0 ? "Nam" : "Nữ"}</td>
-                            <td class="text-align--center no_padding column-medium-width">${dob}</td>
-                            <td class="text-align--left column-big-width">${idNumber}</td>
+                            <td class="text-align--center no_padding column-medium-width">${dob || "" }</td>
+                            <td class="text-align--left column-big-width">${idNumber || "" }</td>
                             <td class="text-align--left column-large-width">${position}</td>
                             <td class="text-align--left column-large-width">${department}</td>
-                            <td class="text-align--left column-medium-width">${bankNumber}</td>
-                            <td class="text-align--left column-large-width">${bankName}</td>
-                            <td class="text-align--left no-right-border column-large-width">${bankBranch}</td>
+                            <td class="text-align--left column-medium-width">${bankNumber || "" }</td>
+                            <td class="text-align--left column-large-width">${bankName || "" }</td>
+                            <td class="text-align--left no-right-border column-large-width">${bankBranch || "" }</td>
                             <td class="text-align--center no_padding table-anchor-right column-small-width">
                                 <div class="table-combobox combobox">
                                     <button href="" class="table-combobox-title button">Sửa</button>

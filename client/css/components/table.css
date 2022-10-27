@@ -8,6 +8,9 @@
     height: calc(100vh - 256px);
     overflow: auto;
 }
+.content-table .table tbody {
+    overflow: hidden;
+}
 
 table thead {
     top: 0;
@@ -25,7 +28,6 @@ table tbody tr {
     height: 48px;
     font-size: 14px;
     padding-left: 12px;
-
 }
 
 table tbody tr td,
